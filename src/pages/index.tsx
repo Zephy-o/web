@@ -1,7 +1,8 @@
 import * as React from "react"
 import NavbarComponent from "../components/navbar"
 import { Router } from "@reach/router"
-import Home from "../components/home"
+import Home from "./home"
+import { FooterComponent } from "../components/footer";
 
 export default class Root extends React.Component {
   render() {
@@ -11,6 +12,7 @@ export default class Root extends React.Component {
         <Router>
           <Home path="/" />
         </Router>
+        <FooterComponent />
       </div>
     )
   }

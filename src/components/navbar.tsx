@@ -23,9 +23,9 @@ export default class NavbarComponent extends React.Component<{}, NavbarState> {
     getActive(base) {
         if(this.state.active)
         {
-            return base; 
+            return base + " is-active"; 
         }
-        return base + " is-active";
+        return base;
     }
 
     render() {
