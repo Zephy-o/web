@@ -1,6 +1,6 @@
 import * as React from "react";
 import LandingImage from "../img/landing-image.png";
-import TestimonialComponent from "./testimonial";
+import TestimonialComponent from "../components/testimonial";
 import { RouteComponentProps } from "@reach/router";
 
 const landingImageStyle = {
