@@ -19,7 +19,7 @@ export default class NavbarComponent extends React.Component<{}, NavbarState> {
             active: !this.state.active
         })
     }
-
+    
     getActive(base) {
         if(this.state.active)
         {
