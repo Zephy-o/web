@@ -19,7 +19,8 @@ block page
 							.card-content
 								.columns
 									.column.is-narrow
-										b >#{c.name}
+										a(href="#" + c.name style="color:black;" id=c.name name=c.name)
+											b >#{c.name}
 									.column
 										each u, i in c.usages
 												if(i != 0)
