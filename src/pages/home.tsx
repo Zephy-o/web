@@ -49,7 +49,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                                         <span className="icon">
                                             <i className="fab fa-discord"></i>
                                         </span>
-                                        Invite
+                                        <span>Invite</span>
                                     </a>
                                 </div>
                                 <div className="control">
