@@ -15,6 +15,7 @@ export default class Root extends React.Component {
           <Donate path="/donate"></Donate>
         </Router>
         <FooterComponent />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossOrigin="anonymous" />
       </div>
     )
   }
