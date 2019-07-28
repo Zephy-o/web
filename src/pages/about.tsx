@@ -2,69 +2,9 @@ import * as React from "react"
 import { RouteComponentProps } from "@reach/router"
 import NavbarComponent from "../components/navbar"
 import { FooterComponent } from "../components/footer"
-
-const devs = [
-  {
-    name: "Veld",
-    desc: "Lead Developer",
-    uid: "121919449996460033",
-    github: "https://github.com/velddev",
-    twitter: "https://twitter.com/velddev",
-    twitch: "https://www.twitch.tv/velddev",
-  },
-  {
-    name: "Niputi",
-    desc: "Web/backend Developer",
-    uid: "162325985079984129",
-    github: "https://github.com/Niputi",
-  },
-]
-const discordStaff = [
-  {
-    name: "xRappy",
-    desc: "Server Admin",
-    uid: "102405515060994048",
-  },
-  {
-    name: "IA",
-    desc: "Server Admin",
-    uid: "147447799573774336",
-  },
-  {
-    name: "Tal",
-    desc: "Server Mod",
-    uid: "166157397738520578",
-  },
-  {
-    name: "Meagan",
-    desc: "Server Mod",
-    uid: "189158295704043521",
-  },
-  {
-    name: "Homer12346",
-    desc: "Server Maid",
-    uid: "136823052368347136",
-  },
-]
-
-const contributers = [
-  "AlexFlipnote",
-  "Brandon",
-  "Drummss",
-  "Florestina",
-  "Fuzen",
-  "GrammarJew",
-  "Igarashi",
-  "Xetera",
-  "Luke",
-  "Milk",
-  "n0t",
-  "Nukegirl",
-  "Phanrazak",
-  "Rie",
-  "Rosie",
-  "Vallode",
-]
+import devs from "../data/devs"
+import discordStaff from "../data/staff"
+import contributers from "../data/contributers"
 
 export default class About extends React.Component<RouteComponentProps> {
   render() {
