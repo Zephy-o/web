@@ -5918,7 +5918,7 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-iterall@^1.2.2:
+iterall@^1.2.0, iterall@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
   integrity sha512-yynBb1g+RFUPY64fTrFv7nsjRrENBQJaX2UL+2Szc9REFrSNm1rpSXHGzhmAy7a9uv3vlvgBlXnf9RqmPH1/DA==
@@ -8246,6 +8246,11 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-condition@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-condition/-/react-condition-3.0.0.tgz#46474e19d4d160732cd7ea451880bc7e29cb024c"
+  integrity sha512-zRWo0Dbjyx3pniV0YB4Ql1OOn73l2i+l5ZdRomlfGYNh+GWVKM92yhvJhsghqjf1lEbr2+gmKS2/VdHgWgto9A==
+
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -8308,6 +8313,13 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-loops@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-loops/-/react-loops-1.3.0.tgz#9b1a8c7f6ca556c3b22ced4aabe4720ee203f61e"
+  integrity sha512-jWMmq75y4llq3jIIiEynGfp26wGTpVxAXHnp44XJotaySrJuD65lU3pAs67j/lfXlERtRcCAst2ca7bpsDWJhA==
+  dependencies:
+    iterall "^1.2.0"
 
 react-reconciler@^0.20.0:
   version "0.20.4"
