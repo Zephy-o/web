@@ -4,13 +4,12 @@ import { FooterComponent } from "../components/footer"
 import NavbarComponent from "../components/navbar"
 import CommandData from "../data/commands"
 import * as Fuse from "fuse.js"
-import { object } from "prop-types"
+import { Else, If } from "react-condition"
+import { For } from "react-loops"
 
 export default class Commands extends React.Component<RouteComponentProps> {
-  constructor(props) {
-    super(props)
-    this.state = { usageValue: object }
-  }
+  
+  componentDidMount() {}
 
   render() {
     return (
@@ -40,7 +39,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
           <div className="columns">
             <section className="column" id="commands">
               {CommandData.map((value: any, key) => {
-                return value.commands.map((cmdValue: any, cmdKey: any) => {
+                return value.commands.map((cmdValue, cmdKey) => {
                   return (
                     <article key={cmdKey} className="card" data={cmdValue.name}>
                       <div className="card-content">
@@ -67,47 +66,43 @@ export default class Commands extends React.Component<RouteComponentProps> {
   }
 }
 
-function CommandDetailscolumn(props: { value: object }) {
-  console.log(props.value)
+function CommandDetailscolumn(props: { value: any }) {
   return (
     <div className="column">
-      {props.value.usages.map((usageValue, usagekey) => (
+      <For of={props.value.usages} as={(usageValue, { key: usagekey }) =>
         <div key={usagekey}>
-          {usagekey != 0 ? (
+          <If test={usagekey !=0}>
             <div className="is-divider" data-content="OR"></div>
-          ) : null}
-          {usageValue.parameters ? (
-            usageValue.parameters.map((paramValue, paramKey) => (
+          </If>
+
+          <If test={usageValue.parameters}>
+            <For of={usageValue.parameters} as={(paramValue, {key: paramKey }) => 
               <span key={paramKey}>
-                {paramValue.constant ? (
+                <If test={paramValue.constant}>
                   <b className="seperated-h">{paramValue.name}</b>
-                ) : paramValue.required ? (
-                  <a
-                    className="tooltip seperated-h tag is-primary"
-                    data-tooltip={paramValue.description}
-                  >
+                </If>
+                <Else>
+                  <If test={paramValue.required}>
+                    <a className="tooltip seperated-h tag is-primary" data-tooltip={paramValue.description}> {paramValue.name} </a>
+                  </If>
+                  <If test={!paramValue.required}>
+                  <a className="tooltip seperated-h tag is-info" data-tooltip={paramValue.description}> 
                     {paramValue.name}
                   </a>
-                ) : (
-                  <a
-                    className="tooltip seperated-h tag is-info"
-                    data-tooltip={paramValue.description}
-                  >
-                    {paramValue.name}
-                  </a>
-                )}
+                  </If>
+                </Else>
               </span>
-            ))
-          ) : (
-            <div
-              className="tooltip seperated-h tag is-disabled"
-              data-tooltip="this means it has no parameters :)"
-            >
+            }/>
+          </If>
+
+          <If test={!usageValue.parameters}>
+            <div className="tooltip seperated-h tag is-disabled" data-tooltip="this means it has no parameters :)">
               none
             </div>
-          )}
+          </If>
         </div>
-      ))}
+      }/>
     </div>
   )
 }
+
