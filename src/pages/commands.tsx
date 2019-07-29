@@ -7,9 +7,75 @@ import * as Fuse from "fuse.js"
 import { Else, If } from "react-condition"
 import { For } from "react-loops"
 
+function findElementByAttribute(
+  elements: HTMLCollection,
+  attributename: string,
+  value: string
+): Element {
+  for (var i = 0; i < elements.length; i++) {
+    var elem = elements.item(i)
+    if (elem.getAttribute(attributename) == value) {
+      return elem
+    }
+  }
+  return null
+}
+
 export default class Commands extends React.Component<RouteComponentProps> {
-  
-  componentDidMount() {}
+  state = {
+    commands: [],
+    allcommandnames: [],
+  }
+
+  componentDidMount() {
+    let commands = document.getElementById("commands")
+    for (var i = 0; i < commands.childElementCount; i++) {
+      let item = commands.children.item(i)
+      let attr = item.getAttribute("data")
+      this.state.commands[this.state.commands.length] = {
+        command: attr,
+      }
+      this.state.allcommandnames[this.state.allcommandnames.length] = attr
+    }
+    console.log(this.state.allcommandnames);
+    
+  }
+
+  handleSearch(input: string) {
+    let commands = document.getElementById("commands")
+
+    let fuse = new Fuse(this.state.commands, {
+      shouldSort: true,
+      threshold: 0.8,
+      location: 0,
+      distance: 100,
+      maxPatternLength: 32,
+      minMatchCharLength: 1,
+      keys: ["command"],
+      id: "command",
+    })
+    let results = fuse.search(input)
+    
+    if ((input.length === 0 || input == "")) {
+      results = this.state.allcommandnames
+    }
+
+    console.log("res", this.state.allcommandnames);
+    
+    for (let i = 0; i < commands.children.length; i++) {
+      let item = commands.children.item(i)
+      if (results.includes(item.getAttribute("data"))) {
+        item.classList.remove("is-hidden")
+      } else {
+        item.classList.add("is-hidden")
+      }
+    }
+
+    for (let i = results.length - 1; i >= 0; i--) {
+      let item = findElementByAttribute(commands.children, "data", results[i])
+      commands.insertBefore(item, commands.children[0])
+    }
+  }
 
   render() {
     return (
@@ -29,6 +95,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
                 type="text"
                 id="searchbar"
                 className="input"
+                onChange={e => this.handleSearch(e.target.value)}
               />
               <span className="icon is-small is-left">
                 <i className="fas fa-search"></i>
@@ -69,40 +136,57 @@ export default class Commands extends React.Component<RouteComponentProps> {
 function CommandDetailscolumn(props: { value: any }) {
   return (
     <div className="column">
-      <For of={props.value.usages} as={(usageValue, { key: usagekey }) =>
-        <div key={usagekey}>
-          <If test={usagekey !=0}>
-            <div className="is-divider" data-content="OR"></div>
-          </If>
+      <For
+        of={props.value.usages}
+        as={(usageValue: any, { key: usagekey }) => (
+          <div key={usagekey}>
+            <If test={usagekey != 0}>
+              <div className="is-divider" data-content="OR"></div>
+            </If>
 
-          <If test={usageValue.parameters}>
-            <For of={usageValue.parameters} as={(paramValue, {key: paramKey }) => 
-              <span key={paramKey}>
-                <If test={paramValue.constant}>
-                  <b className="seperated-h">{paramValue.name}</b>
-                </If>
-                <Else>
-                  <If test={paramValue.required}>
-                    <a className="tooltip seperated-h tag is-primary" data-tooltip={paramValue.description}> {paramValue.name} </a>
-                  </If>
-                  <If test={!paramValue.required}>
-                  <a className="tooltip seperated-h tag is-info" data-tooltip={paramValue.description}> 
-                    {paramValue.name}
-                  </a>
-                  </If>
-                </Else>
-              </span>
-            }/>
-          </If>
+            <If test={usageValue.parameters}>
+              <For
+                of={usageValue.parameters}
+                as={(paramValue: any, { key: paramKey }) => (
+                  <span key={paramKey}>
+                    <If test={paramValue.constant}>
+                      <b className="seperated-h">{paramValue.name}</b>
+                    </If>
+                    <Else>
+                      <If test={paramValue.required}>
+                        <a
+                          className="tooltip seperated-h tag is-primary"
+                          data-tooltip={paramValue.description}
+                        >
+                          {" "}
+                          {paramValue.name}{" "}
+                        </a>
+                      </If>
+                      <If test={!paramValue.required}>
+                        <a
+                          className="tooltip seperated-h tag is-info"
+                          data-tooltip={paramValue.description}
+                        >
+                          {paramValue.name}
+                        </a>
+                      </If>
+                    </Else>
+                  </span>
+                )}
+              />
+            </If>
 
-          <If test={!usageValue.parameters}>
-            <div className="tooltip seperated-h tag is-disabled" data-tooltip="this means it has no parameters :)">
-              none
-            </div>
-          </If>
-        </div>
-      }/>
+            <If test={!usageValue.parameters}>
+              <div
+                className="tooltip seperated-h tag is-disabled"
+                data-tooltip="this means it has no parameters :)"
+              >
+                none
+              </div>
+            </If>
+          </div>
+        )}
+      />
     </div>
   )
 }
-
