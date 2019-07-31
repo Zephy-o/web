@@ -1,21 +1,19 @@
 import * as React from "react"
-import NavbarComponent from "../components/navbar"
 import { Router } from "@reach/router"
 import Home from "./home"
 import Donate from "./donate"
-import { FooterComponent } from "../components/footer";
+import About from "./about"
+import Commands from "./commands"
 
 export default class Root extends React.Component {
   render() {
     return (
-      <div>
-        <NavbarComponent />
-        <Router>
-          <Home path="/" />
-          <Donate path="/donate"></Donate>
-        </Router>
-        <FooterComponent />
-      </div>
+      <Router>
+        <Home path="/" />
+        <Donate path="/donate"></Donate>
+        <About path="/about"></About>
+        <Commands path="/commands"></Commands>
+      </Router>
     )
   }
 }
