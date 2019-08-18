@@ -5,5 +5,5 @@ Repository for the https://miki.ai/ website.
 
 ## Building
 1. `git clone https://github.com/Mikibot/web.git`
-2. `npm install`
-3. `npm start`
+2. `yarn`
+3. `yarn start`
