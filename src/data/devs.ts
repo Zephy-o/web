@@ -13,4 +13,4 @@ export default [
     uid: "162325985079984129",
     github: "https://github.com/Niputi",
   },
-]
+];

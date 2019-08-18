@@ -51,7 +51,7 @@ export default class About extends React.Component<RouteComponentProps> {
                             <a
                               className="about-link"
                               href={value.github}
-                              target="_blank"
+                              target="_blank noreferrer"
                               rel="noopener"
                             >
                               <i
@@ -68,7 +68,7 @@ export default class About extends React.Component<RouteComponentProps> {
                               <a
                                 className="about-link"
                                 href={value.twitter}
-                                target="_blank"
+                                target="_blank noreferrer"
                                 rel="noopener"
                               >
                                 <i
@@ -85,7 +85,7 @@ export default class About extends React.Component<RouteComponentProps> {
                               <a
                                 className="about-link"
                                 href={value.twitch}
-                                target="_blank"
+                                target="_blank noreferrer"
                                 rel="noopener"
                               >
                                 <i

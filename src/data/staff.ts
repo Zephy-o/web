@@ -24,4 +24,4 @@ export default [
     desc: "Server Maid",
     uid: "136823052368347136",
   },
-]
+];

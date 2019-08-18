@@ -16,12 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    yarn global add tslint typescript
-  displayName: 'Install TSLint'
-
-- script: |
     yarn
-    yarn run build
+    yarn build
   displayName: 'yarn install and build'
 
 - script: |

@@ -12,8 +12,8 @@ function findElementByAttribute(
   attributename: string,
   value: string
 ): Element {
-  for (var i = 0; i < elements.length; i++) {
-    var elem = elements.item(i)
+  for (let i = 0; i < elements.length; i++) {
+    const elem = elements.item(i)
     if (elem.getAttribute(attributename) == value) {
       return elem
     }
@@ -28,13 +28,15 @@ export default class Commands extends React.Component<RouteComponentProps> {
   }
 
   componentDidMount() {
-    let commands = document.getElementById("commands")
-    for (var i = 0; i < commands.childElementCount; i++) {
-      let item = commands.children.item(i)
-      let attr = item.getAttribute("data")
+    const commands = document.getElementById("commands")
+    for (let i = 0; i < commands.childElementCount; i++) {
+      const item = commands.children.item(i)
+      const attr = item.getAttribute("data")
+      // eslint-disable-next-line react/no-direct-mutation-state
       this.state.commands[this.state.commands.length] = {
         command: attr,
       }
+      // eslint-disable-next-line react/no-direct-mutation-state
       this.state.allcommandnames[this.state.allcommandnames.length] = attr
     }
     console.log(this.state.allcommandnames);
@@ -42,9 +44,9 @@ export default class Commands extends React.Component<RouteComponentProps> {
   }
 
   handleSearch(input: string) {
-    let commands = document.getElementById("commands")
+    const commands = document.getElementById("commands")
 
-    let fuse = new Fuse(this.state.commands, {
+    const fuse = new Fuse(this.state.commands, {
       shouldSort: true,
       threshold: 0.8,
       location: 0,
@@ -63,7 +65,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
     console.log("res", this.state.allcommandnames);
     
     for (let i = 0; i < commands.children.length; i++) {
-      let item = commands.children.item(i)
+      const item = commands.children.item(i)
       if (results.includes(item.getAttribute("data"))) {
         item.classList.remove("is-hidden")
       } else {
@@ -72,7 +74,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
     }
 
     for (let i = results.length - 1; i >= 0; i--) {
-      let item = findElementByAttribute(commands.children, "data", results[i])
+      const item = findElementByAttribute(commands.children, "data", results[i])
       commands.insertBefore(item, commands.children[0])
     }
   }
@@ -105,7 +107,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
 
           <div className="columns">
             <section className="column" id="commands">
-              {CommandData.map((value: any, key) => {
+              {CommandData.map((value: any) => {
                 return value.commands.map((cmdValue, cmdKey) => {
                   return (
                     <article key={cmdKey} className="card" data={cmdValue.name}>

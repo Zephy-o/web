@@ -138,7 +138,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
             <a
               href="https://ko-fi.com/velddy"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <div
                 className="button is-rounded is-large"
