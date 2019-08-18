@@ -8,7 +8,7 @@ Standard dev mode with built-in parcel webserver
 2. `npm run dev`
 
 ## Building with docker + nginx
-Big boy build with nginx, removing `.html` extensions from endpoints
+Build with nginx, removing `.html` extensions from endpoints
 
 Note: If you're not using `npm run build`, files must be compiled with
 the `--public-url ./` flag to prevent anchors from linking to `/about.html` 
