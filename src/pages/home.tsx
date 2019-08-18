@@ -21,7 +21,7 @@ export default class Home extends React.Component<RouteComponentProps> {
 
   onLoad() {
     let previousPosition = window.scrollY
-    let header_nav = document.getElementById("global-nav-bar")
+    const header_nav = document.getElementById("global-nav-bar")
 
     header_nav.classList.add(
       "is-dark",
@@ -29,7 +29,7 @@ export default class Home extends React.Component<RouteComponentProps> {
       "is-fixed-top",
       "is-smoother"
     )
-    window.onscroll = e => {
+    window.onscroll = () => {
       if (window.scrollY > 0 && previousPosition === 0) {
         header_nav.classList.remove("navbar-large")
         header_nav.classList.remove("is-dark")

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "@reach/router";
 
 interface NavbarState {
-    active: boolean
+    active: boolean;
 }
 
 export default class NavbarComponent extends React.Component<{}, NavbarState> {
@@ -14,7 +14,7 @@ export default class NavbarComponent extends React.Component<{}, NavbarState> {
         this.toggle = this.toggle.bind(this);
     }
     
-    toggle(ev : React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    toggle() {
         this.setState({
             active: !this.state.active
         })
@@ -60,8 +60,8 @@ export default class NavbarComponent extends React.Component<{}, NavbarState> {
 }
 
 interface NavbarItemProps {
-    href: string,
-    value: string
+    href: string;
+    value: string;
 }
 
 class NavbarItemComponent extends React.Component<NavbarItemProps> {

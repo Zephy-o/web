@@ -24,7 +24,7 @@ declare module "react-condition" {
   type Default = (props: {children: Children}) => JSX.Element
   
   type Case = (props: {
-    value: any,
+    value: any;
     children: Children;
   }) => JSX.Element
 

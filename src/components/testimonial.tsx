@@ -1,10 +1,10 @@
 import * as React from "react";
 
 interface TestimonialProps {
-    quote: string,
-    imageURL: string,
-    imageAlt: string,
-    name: string
+    quote: string;
+    imageURL: string;
+    imageAlt: string;
+    name: string;
 }
 
 export default class TestimonialComponent extends React.Component<TestimonialProps> {
