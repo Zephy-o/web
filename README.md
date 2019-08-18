@@ -1,6 +1,7 @@
 # Miki.ai
+[![Build Status](https://dev.azure.com/mikibot/Miki/_apis/build/status/Mikibot.web?branchName=master)](https://dev.azure.com/mikibot/Miki/_build/latest?definitionId=6&branchName=master)
 
-https://miki.ai
+Repository for the https://miki.ai/ website.
 
 ## Building
 1. `git clone https://github.com/Mikibot/web.git`
