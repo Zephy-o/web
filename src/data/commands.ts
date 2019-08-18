@@ -327,7 +327,7 @@ export default [
                 usages: [
                     {
                         usage: ">ask",
-                        description: "Miki will ask you"
+                        description: "Miki will ask you",
                     },
                     {
                         usage: ">ask [text]",
@@ -335,11 +335,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to ask"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to ask",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "bite",
@@ -347,7 +347,7 @@ export default [
                 usages: [
                     {
                         usage: ">bite",
-                        description: "Miki will bite you"
+                        description: "Miki will bite you",
                     },
                     {
                         usage: ">bite [text]",
@@ -355,11 +355,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to bite"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to bite",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "cake",
@@ -367,7 +367,7 @@ export default [
                 usages: [
                     {
                         usage: ">cake",
-                        description: "Miki will feed you cake"
+                        description: "Miki will feed you cake",
                     },
                     {
                         usage: ">cake [text]",
@@ -375,11 +375,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to feed cake to"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to feed cake to",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "cuddle",
@@ -387,7 +387,7 @@ export default [
                 usages: [
                     {
                         usage: ">cuddle",
-                        description: "Miki will cuddle you"
+                        description: "Miki will cuddle you",
                     },
                     {
                         usage: ">cuddle [text]",
@@ -395,11 +395,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to cuddle"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to cuddle",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "glare",
@@ -407,7 +407,7 @@ export default [
                 usages: [
                     {
                         usage: ">glare",
-                        description: "Miki will glare at you"
+                        description: "Miki will glare at you",
                     },
                     {
                         usage: ">glare [text]",
@@ -415,11 +415,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to glare at"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to glare at",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "highfive",
@@ -427,7 +427,7 @@ export default [
                 usages: [
                     {
                         usage: ">highfive",
-                        description: "Miki will high-five you"
+                        description: "Miki will high-five you",
                     },
                     {
                         usage: ">highfive [text]",
@@ -435,11 +435,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to high-five"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to high-five",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "kiss",
@@ -447,7 +447,7 @@ export default [
                 usages: [
                     {
                         usage: ">kiss",
-                        description: "Miki will kiss you"
+                        description: "Miki will kiss you",
                     },
                     {
                         usage: ">kiss [text]",
@@ -455,11 +455,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to kiss"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to kiss",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "lick",
@@ -467,7 +467,7 @@ export default [
                 usages: [
                     {
                         usage: ">lick",
-                        description: "Miki will lick you"
+                        description: "Miki will lick you",
                     },
                     {
                         usage: ">lick [text]",
@@ -475,11 +475,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to lick"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to lick",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "pat",
@@ -487,7 +487,7 @@ export default [
                 usages: [
                     {
                         usage: ">pat",
-                        description: "Miki will pat you"
+                        description: "Miki will pat you",
                     },
                     {
                         usage: ">pat [text]",
@@ -495,11 +495,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to pat"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to pat",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "slap",
@@ -507,7 +507,7 @@ export default [
                 usages: [
                     {
                         usage: ">poke",
-                        description: "Miki will punch you"
+                        description: "Miki will punch you",
                     },
                     {
                         usage: ">poke [text]",
@@ -515,11 +515,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to punch"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to punch",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "poke",
@@ -527,7 +527,7 @@ export default [
                 usages: [
                     {
                         usage: ">poke",
-                        description: "Miki will poke you"
+                        description: "Miki will poke you",
                     },
                     {
                         usage: ">poke [text]",
@@ -535,11 +535,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to poke"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to poke",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "punch",
@@ -547,7 +547,7 @@ export default [
                 usages: [
                     {
                         usage: ">poke",
-                        description: "Miki will punch you"
+                        description: "Miki will punch you",
                     },
                     {
                         usage: ">poke [text]",
@@ -555,11 +555,11 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to punch"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Who/what to punch",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "slap",
@@ -567,7 +567,7 @@ export default [
                 usages: [
                     {
                         usage: ">slap",
-                        description: "Miki will slap you"
+                        description: "Miki will slap you",
                     },
                     {
                         usage: ">slap [text]",
@@ -575,13 +575,13 @@ export default [
                         parameters: [
                             {
                                 name: "text",
-                                description: "Who/what to slap"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                description: "Who/what to slap",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "admin",
@@ -589,7 +589,7 @@ export default [
             {
                 name: "ban",
                 description: "Bans an user from the server",
-                usages:[
+                usages: [
                     {
                         usage: ">ban <mention> [reason]",
                         description: "Bans an user based on mention. Reason is optional",
@@ -597,14 +597,14 @@ export default [
                             {
                                 name: "mention",
                                 description: "Mention of user",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "reason",
                                 description: "Reason for ban",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">ban <user id> [reason]",
@@ -613,16 +613,16 @@ export default [
                             {
                                 name: "user id",
                                 description: "Discord ID of user",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "reason",
                                 description: "Reason for ban",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "clean",
@@ -634,16 +634,16 @@ export default [
                             {
                                 name: "amount",
                                 description: "Amount of message",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "kick",
                 description: "Kicks an user from the server",
-                usages:[
+                usages: [
                     {
                         usage: ">kick <mention> [reason]",
                         description: "Kicks an user based on mention. Reason is optional",
@@ -651,14 +651,14 @@ export default [
                             {
                                 name: "mention",
                                 description: "Mention of user",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "reason",
                                 description: "Reason for kick",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">kick <user id> [reason]",
@@ -667,16 +667,16 @@ export default [
                             {
                                 name: "user id",
                                 description: "Discord ID of user",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "reason",
                                 description: "Reason for kick",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "prune",
@@ -688,24 +688,24 @@ export default [
                             {
                                 name: "amount",
                                 description: "Amount of message",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "mention",
-                                description: "Mention of user"
+                                description: "Mention of user",
                             },
                             {
                                 name: "filter",
-                                description: "Phrase you want to filter out. Must be in quotes"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Phrase you want to filter out. Must be in quotes",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "setevent",
                 description: "Enable/Disable a command",
-                usages:[
+                usages: [
                     {
                         usage: ">setevent <command> 0 [-g]",
                         description: "Disables a command",
@@ -713,13 +713,13 @@ export default [
                             {
                                 name: "command",
                                 description: "Name of command",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "-g",
-                                description: "Add '-g' at end on command to disable serverwide"
-                            }
-                        ]
+                                description: "Add '-g' at end on command to disable serverwide",
+                            },
+                        ],
                     },
                     {
                         usage: ">setevent <command> 1 [-g]",
@@ -728,21 +728,21 @@ export default [
                             {
                                 name: "command",
                                 description: "Name of command",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "-g",
-                                description: "Add '-g' at end on command to enable serverwide"
-                            }
-                        ]
-                    }
+                                description: "Add '-g' at end on command to enable serverwide",
+                            },
+                        ],
+                    },
                 ],
-                aliases: ["setcommand"]
+                aliases: ["setcommand"],
             },
             {
                 name: "setmodule",
                 description: "Enable/Disable a module",
-                usages:[
+                usages: [
                     {
                         usage: ">setmodule <module> 0 [-g]",
                         description: "Disables a module",
@@ -750,13 +750,13 @@ export default [
                             {
                                 name: "module",
                                 description: "Name of module",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "-g",
-                                description: "Add '-g' at end on command to disable serverwide"
-                            }
-                        ]
+                                description: "Add '-g' at end on command to disable serverwide",
+                            },
+                        ],
                     },
                     {
                         usage: ">setevent <module> 1 [-g]",
@@ -765,20 +765,20 @@ export default [
                             {
                                 name: "module",
                                 description: "Name of module",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "-g",
-                                description: "Add '-g' at end on command to enable serverwide"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Add '-g' at end on command to enable serverwide",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "softban",
                 description: "Softbans an user from the server",
-                usages:[
+                usages: [
                     {
                         usage: ">softban <mention> [reason]",
                         description: "Softbans an user based on mention. Reason is optional",
@@ -786,14 +786,14 @@ export default [
                             {
                                 name: "mention",
                                 description: "Mention of user",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "reason",
                                 description: "Reason for softban",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">softban <user id> [reason]",
@@ -802,18 +802,18 @@ export default [
                             {
                                 name: "user id",
                                 description: "Discord ID of user",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "reason",
                                 description: "Reason for softban",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "anime",
@@ -828,11 +828,11 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of anime you want to look for",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "findcharacter",
@@ -844,11 +844,11 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of character you want to look for",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "findmanga",
@@ -860,11 +860,11 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of manga you want to look for",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "getanime",
@@ -877,9 +877,9 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of anime you want to look for",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">getanime <id>",
@@ -888,11 +888,11 @@ export default [
                             {
                                 name: "id",
                                 description: "AniList ID",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "getcharacter",
@@ -905,9 +905,9 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of character you want to look for",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">getcharacter <id>",
@@ -916,11 +916,11 @@ export default [
                             {
                                 name: "id",
                                 description: "AniList ID",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "getmanga",
@@ -933,9 +933,9 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of manga you want to look for",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">getmanga <id>",
@@ -944,13 +944,13 @@ export default [
                             {
                                 name: "id",
                                 description: "AniList ID",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "donator",
@@ -964,15 +964,15 @@ export default [
                         parameters: [
                             {
                                 name: "mention",
-                                description: "Mention of user"
+                                description: "Mention of user",
                             },
                             {
                                 name: "content",
-                                description: "Message you want to put on box"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Message you want to put on box",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "disability",
@@ -983,11 +983,11 @@ export default [
                         parameters: [
                             {
                                 name: "mention",
-                                description: "Mention of user"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Mention of user",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "redeemkey",
@@ -999,11 +999,11 @@ export default [
                             {
                                 name: "key",
                                 description: "Donator key",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "sellkey",
@@ -1015,11 +1015,11 @@ export default [
                             {
                                 name: "key",
                                 description: "Donator key",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "tohru",
@@ -1030,11 +1030,11 @@ export default [
                         parameters: [
                             {
                                 name: "content",
-                                description: "Text of what you want to write"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Text of what you want to write",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "trapcard",
@@ -1045,11 +1045,11 @@ export default [
                         parameters: [
                             {
                                 name: "mention",
-                                description: "Mention of user"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Mention of user",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "truth",
@@ -1060,13 +1060,13 @@ export default [
                         parameters: [
                             {
                                 name: "content",
-                                description: "Text of what you want to write"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                description: "Text of what you want to write",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "eventmessages",
@@ -1081,11 +1081,11 @@ export default [
                             {
                                 name: "text",
                                 description: "Text of the message",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "setwelcomemessage",
@@ -1097,11 +1097,11 @@ export default [
                             {
                                 name: "text",
                                 description: "Text of the message",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "testmessage",
@@ -1113,13 +1113,13 @@ export default [
                             {
                                 name: "type",
                                 description: "Type of message",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "fun",
@@ -1134,10 +1134,10 @@ export default [
                             {
                                 name: "question",
                                 description: "The question you want Miki to answer",
-                            }
-                        ]
-                    }
-                ]
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "bird",
@@ -1145,9 +1145,9 @@ export default [
                 usages: [
                     {
                         usage: ">bird",
-                    }
+                    },
                 ],
-                aliases: ["birb"]
+                aliases: ["birb"],
             },
             {
                 name: "cage",
@@ -1155,8 +1155,8 @@ export default [
                 usages: [
                     {
                         usage: ">cage",
-                    }
-                ]
+                    },
+                ],
             },
             {
                 name: "cat",
@@ -1164,8 +1164,8 @@ export default [
                 usages: [
                     {
                         usage: ">cat",
-                    }
-                ]
+                    },
+                ],
             },
             {
                 name: "compliment",
@@ -1173,8 +1173,8 @@ export default [
                 usages: [
                     {
                         usage: ">compliment",
-                    }
-                ]
+                    },
+                ],
             },
             {
                 name: "dog",
@@ -1182,8 +1182,8 @@ export default [
                 usages: [
                     {
                         usage: ">dog",
-                    }
-                ]
+                    },
+                ],
             },
             {
                 name: "gif",
@@ -1194,21 +1194,21 @@ export default [
                         parameters: [
                             {
                                 name: "search term",
-                                description: "Anything related to the gif you'd like to see"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Anything related to the gif you'd like to see",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "greentext",
                 description: "Posts a short story from 4chan",
                 usages: [
                     {
-                        usage: ">greentext"
-                    }
+                        usage: ">greentext",
+                    },
                 ],
-                aliases: ["green", "gt"]
+                aliases: ["green", "gt"],
             },
             {
                 name: "img",
@@ -1219,11 +1219,11 @@ export default [
                         parameters: [
                             {
                                 name: "search term",
-                                description: "Anything related to the image you'd like to see"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Anything related to the image you'd like to see",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "pick",
@@ -1235,20 +1235,20 @@ export default [
                             {
                                 name: "choice",
                                 description: "One of the choices you want miki to make! Use a comma to seperate the choices",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "pun",
                 description: "Tells you a random pun",
                 usages: [
                     {
-                        usage: ">pun"
-                    }
-                ]
+                        usage: ">pun",
+                    },
+                ],
             },
             {
                 name: "reminder",
@@ -1256,7 +1256,7 @@ export default [
                 usages: [
                     {
                         usage: ">reminder -list",
-                        description: "Shows all your open reminders"
+                        description: "Shows all your open reminders",
                     },
                     {
                         usage: ">reminder -clear <id>",
@@ -1265,9 +1265,9 @@ export default [
                             {
                                 name: "id",
                                 description: "The reminder ID; can be obtained from '>reminder -list'",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">reminder <reminder> in <time>",
@@ -1276,17 +1276,17 @@ export default [
                             {
                                 name: "reminder",
                                 description: "What you want to be reminded of",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "time",
                                 description: "Amount of time",
-                                required: true
-                            }
-                        ]
-                    }
+                                required: true,
+                            },
+                        ],
+                    },
                 ],
-                aliases: ["remind"]
+                aliases: ["remind"],
             },
             {
                 name: "roll",
@@ -1297,20 +1297,20 @@ export default [
                         parameters: [
                             {
                                 name: "number",
-                                description: "The max Miki can roll; Default=100"
-                            }
-                        ]
+                                description: "The max Miki can roll; Default=100",
+                            },
+                        ],
                     },
                     {
                         usage: ">roll [expression]",
                         parameters: [
                             {
                                 name: "expression",
-                                description: "More advanced rolls; use math in your rolls. (e.x. '>roll 2d4 + 2' rolls two dices with four sides and adds two to the final roll)"
-                            }
-                        ]
-                    }
-                ]
+                                description: "More advanced rolls; use math in your rolls. (e.x. '>roll 2d4 + 2' rolls two dices with four sides and adds two to the final roll)",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "safe",
@@ -1322,11 +1322,11 @@ export default [
                         parameters: [
                             {
                                 name: "tags",
-                                description: "A tag from safebooru; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space"
-                            }
-                        ]
-                    }
-                ]
+                                description: "A tag from safebooru; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "ship",
@@ -1337,24 +1337,24 @@ export default [
                         parameters: [
                             {
                                 name: "mention",
-                                description: "User you'd like to ship with"
-                            }
+                                description: "User you'd like to ship with",
+                            },
                         ],
-                        required: true
+                        required: true,
                     },
                     {
                         usage: ">ship <user id>",
                         parameters: [
                             {
                                 name: "user id",
-                                description: "Discord ID of the user you'd like to ship with"
-                            }
+                                description: "Discord ID of the user you'd like to ship with",
+                            },
                         ],
-                        required: true
-                    }
-                ]
+                        required: true,
+                    },
+                ],
             },
-        ]
+        ],
     },
     {
         name: "gambling",
@@ -1369,14 +1369,14 @@ export default [
                         parameters: [
                             {
                                 name: "new",
-                                constant: true
+                                constant: true,
                             },
                             {
                                 name: "bet",
                                 description: "Amount of mekos you want to bet",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">blackjack hit",
@@ -1384,9 +1384,9 @@ export default [
                         parameters: [
                             {
                                 name: "hit",
-                                constant: true
-                            }
-                        ]
+                                constant: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">blackjack stay",
@@ -1394,12 +1394,12 @@ export default [
                         parameters: [
                             {
                                 name: "stay",
-                                constant: true
-                            }
-                        ]
-                    }
+                                constant: true,
+                            },
+                        ],
+                    },
                 ],
-                aliases: ["bj"]
+                aliases: ["bj"],
             },
             {
                 name: "flip",
@@ -1412,20 +1412,20 @@ export default [
                             {
                                 name: "bet",
                                 description: "Amount of mekos you want to bet",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "side",
                                 description: "Side of the coin you want to bet on. Can only be heads or tails",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "ok",
-                                description: "You need to add 'ok' if you're planning on betting over 10,000 mekos"
-                            }
-                        ]
-                    }
-                ]
+                                description: "You need to add 'ok' if you're planning on betting over 10,000 mekos",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "rps",
@@ -1438,20 +1438,20 @@ export default [
                             {
                                 name: "bet",
                                 description: "Amount of mekos you want to bet",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "choice",
                                 description: "Can only be rock, paper or scissors",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "ok",
-                                description: "You need to add 'ok' if you're planning on betting over 10,000 mekos"
-                            }
-                        ]
-                    }
-                ]
+                                description: "You need to add 'ok' if you're planning on betting over 10,000 mekos",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "slots",
@@ -1464,18 +1464,18 @@ export default [
                             {
                                 name: "bet",
                                 description: "Amount of mekos you want to bet",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "ok",
-                                description: "You need to add 'ok' if you're planning on betting over 10,000 mekos"
-                            }
-                        ]
-                    }
+                                description: "You need to add 'ok' if you're planning on betting over 10,000 mekos",
+                            },
+                        ],
+                    },
                 ],
-                aliases: ["s"]
-            }
-        ]
+                aliases: ["s"],
+            },
+        ],
     },
     {
         name: "gaming",
@@ -1491,11 +1491,11 @@ export default [
                             {
                                 name: "username",
                                 description: "The osu! username you'd like to see stats from",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "mania",
@@ -1508,11 +1508,11 @@ export default [
                             {
                                 name: "username",
                                 description: "The osu! username you'd like to see stats from",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "osu",
@@ -1525,11 +1525,11 @@ export default [
                             {
                                 name: "username",
                                 description: "The osu! username you'd like to see stats from",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "taiko",
@@ -1542,13 +1542,13 @@ export default [
                             {
                                 name: "username",
                                 description: "The osu! username you'd like to see stats from",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
-        ]
+        ],
     },
     {
         name: "general",
@@ -1559,27 +1559,27 @@ export default [
                 usages: [
                     {
                         usage: ">avatar",
-                        description: "Get your own avatar!"
+                        description: "Get your own avatar!",
                     },
                     {
                         description: "Get someone else's avatar!",
                         parameters: [
                             {
                                 name: "mention",
-                                description: "Mention of the user"
-                            }
-                        ]
+                                description: "Mention of the user",
+                            },
+                        ],
                     },
                     {
                         description: "Get someone else's avatar!",
                         parameters: [
                             {
                                 name: "user id",
-                                description: "Discord ID of the user"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Discord ID of the user",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "calc",
@@ -1592,12 +1592,12 @@ export default [
                             {
                                 name: "expression",
                                 description: "An example of an expression would be '1+1'",
-                                required: true
-                            }
-                        ]
-                    }
+                                required: true,
+                            },
+                        ],
+                    },
                 ],
-                aliases: [ "calculate" ]
+                aliases: [ "calculate" ],
             },
             {
                 name: "changelog",
@@ -1605,9 +1605,9 @@ export default [
                 usages: [
                     {
                         usage: ">changelog",
-                        description: "Displays the blog link"
-                    }
-                ]
+                        description: "Displays the blog link",
+                    },
+                ],
             },
             {
                 name: "donate",
@@ -1615,10 +1615,10 @@ export default [
                 usages: [
                     {
                         usage: ">donate",
-                        description: "Displays donation information"
-                    }
+                        description: "Displays donation information",
+                    },
                 ],
-                aliases: ["patreon"]
+                aliases: ["patreon"],
             },
             {
                 name: "giveaway",
@@ -1631,7 +1631,7 @@ export default [
                             {
                                 name: "text",
                                 description: "Object you want to give away",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "time",
@@ -1640,10 +1640,10 @@ export default [
                             {
                                 name: "amount",
                                 description: "Set the amount of winners of the giveaway as a number. Default = 1",
-                            }
-                        ]
-                    }
-                ]
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "guildinfo",
@@ -1651,9 +1651,9 @@ export default [
                 usages: [
                     {
                         usage: ">guildinfo",
-                        description: "Displays information about the guild"
-                    }
-                ]
+                        description: "Displays information about the guild",
+                    },
+                ],
             },
             {
                 name: "help",
@@ -1661,7 +1661,7 @@ export default [
                 usages: [
                     {
                         usage: ">help",
-                        description: "DMs you a list of commands"
+                        description: "DMs you a list of commands",
                     },
                     {
                         usage: ">help [command name]",
@@ -1670,10 +1670,10 @@ export default [
                             {
                                 name: "command name",
                                 description: "Any command name available for Miki",
-                            }
-                        ]
-                    }
-                ]
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "info",
@@ -1681,10 +1681,10 @@ export default [
                 usages: [
                     {
                         usage: ">info",
-                        description: "Shows you Miki's credits and version"
-                    }
+                        description: "Shows you Miki's credits and version",
+                    },
                 ],
-                aliases: ["about"]
+                aliases: ["about"],
             },
             {
                 name: "invite",
@@ -1692,9 +1692,9 @@ export default [
                 usages: [
                     {
                         usage: ">invite",
-                        description: "Add Miki to your server with this URL!"
-                    }
-                ]
+                        description: "Add Miki to your server with this URL!",
+                    },
+                ],
             },
             {
                 name: "ping",
@@ -1702,10 +1702,10 @@ export default [
                 usages: [
                     {
                         usage: ">ping",
-                        description: "Displays latency based on message timestamps"
-                    }
+                        description: "Displays latency based on message timestamps",
+                    },
                 ],
-                aliases: ["lag"]
+                aliases: ["lag"],
             },
             {
                 name: "prefix",
@@ -1713,9 +1713,9 @@ export default [
                 usages: [
                     {
                         usage: ">prefix",
-                        description: "Displays the prefix"
-                    }
-                ]
+                        description: "Displays the prefix",
+                    },
+                ],
             },
             {
                 name: "stats",
@@ -1723,9 +1723,9 @@ export default [
                 usages: [
                     {
                         usage: ">stats",
-                        description: "Displays general statistics"
-                    }
-                ]
+                        description: "Displays general statistics",
+                    },
+                ],
             },
             {
                 name: "urban",
@@ -1737,11 +1737,11 @@ export default [
                             {
                                 name: "word",
                                 description: "Word you'd like to know the definition of",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "whois",
@@ -1753,9 +1753,9 @@ export default [
                             {
                                 name: "mention",
                                 description: "Mention of the user you'd like to know more about",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                       },
                       {
                         usage: ">whois <user id>",
@@ -1763,13 +1763,13 @@ export default [
                             {
                                 name: "user id",
                                 description: "Discord ID of the user you'd like to know more about",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "guild_accounts",
@@ -1785,15 +1785,15 @@ export default [
                             {
                                 name: "amount",
                                 description: "Amount of mekos",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">guildbank balance",
-                        description: "Displays the amount of mekos stored in the bank"
-                    }
-                ]
+                        description: "Displays the amount of mekos stored in the bank",
+                    },
+                ],
             },
             {
                 name: "guildconfig",
@@ -1806,9 +1806,9 @@ export default [
                             {
                                 name: "boolean",
                                 description: "Type either yes or no",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">guildconfig expneeded <exp>",
@@ -1817,11 +1817,11 @@ export default [
                             {
                                 name: "exp",
                                 description: "Amount of experience",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "guildhouse",
@@ -1829,9 +1829,9 @@ export default [
                 usages: [
                     {
                         usage: ">guildhouse",
-                        description: "Displays your current weekly bonus and tier of your guild"
-                    }
-                ]
+                        description: "Displays your current weekly bonus and tier of your guild",
+                    },
+                ],
             },
             {
                 name: "guildnewrival",
@@ -1839,9 +1839,9 @@ export default [
                 usages: [
                     {
                         usage: ">guildnewrival",
-                        description: "Matches your guild with a new guild"
-                    }
-                ]
+                        description: "Matches your guild with a new guild",
+                    },
+                ],
             },
             {
                 name: "guildprofile",
@@ -1849,9 +1849,9 @@ export default [
                 usages: [
                     {
                         usage: ">guildprofile",
-                        description: "Displays a profile of your guild"
-                    }
-                ]
+                        description: "Displays a profile of your guild",
+                    },
+                ],
             },
             {
                 name: "guildupgrade",
@@ -1864,11 +1864,11 @@ export default [
                             {
                                 name: "tier",
                                 description: "Tier you want to upgrade to",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "guildweekly",
@@ -1876,12 +1876,12 @@ export default [
                 usages: [
                     {
                         usage: ">guildweekly",
-                        description: "Claim your weekly rewards"
-                    }
+                        description: "Claim your weekly rewards",
+                    },
                 ],
-                aliases: ["weekly"]
-            }
-        ]
+                aliases: ["weekly"],
+            },
+        ],
     },
     {
         name: "marriage",
@@ -1895,32 +1895,32 @@ export default [
                         parameters: [
                             {
                                 name: "mention",
-                                description: "Mention of user"
-                            }
+                                description: "Mention of user",
+                            },
                         ],
-                        required: true
+                        required: true,
                     },
                     {
                         usage: ">acceptmarriage <user id>",
                         parameters: [
                             {
                                 name: "user id",
-                                description: "Discord ID of user"
-                            }
+                                description: "Discord ID of user",
+                            },
                         ],
-                        required: true
-                    }
-                ]
+                        required: true,
+                    },
+                ],
             },
             {
                 name: "buymarriageslot",
                 description: "Buy an extra marriage slot using mekos",
-                usages:[
+                usages: [
                     {
                         usage: ">buymarriageslot",
-                        description: "Use mekos to buy a new marriage slot"
-                    }
-                ]
+                        description: "Use mekos to buy a new marriage slot",
+                    },
+                ],
             },
             {
                 name: "cancelmarriage",
@@ -1928,7 +1928,7 @@ export default [
                 usages: [
                     {
                         usage: ">cancelmarriage",
-                        description: "Displays all the proposals you sent"
+                        description: "Displays all the proposals you sent",
                     },
                     {
                         usage: ">cancelmarriage <number>",
@@ -1937,11 +1937,11 @@ export default [
                             {
                                 name: "number",
                                 description: "Position of sent proposal",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "declinemarriage",
@@ -1949,7 +1949,7 @@ export default [
                 usages: [
                     {
                         usage: ">declinemarriage",
-                        description: "Displays all the proposals you received"
+                        description: "Displays all the proposals you received",
                     },
                     {
                         usage: ">declinemarriage <number>",
@@ -1958,11 +1958,11 @@ export default [
                             {
                                 name: "number",
                                 description: "Position of received proposal",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "divorce",
@@ -1970,7 +1970,7 @@ export default [
                 usages: [
                     {
                         usage: ">divorce",
-                        description: "Displays all your spouses"
+                        description: "Displays all your spouses",
                     },
                     {
                         usage: ">divorce <number>",
@@ -1979,11 +1979,11 @@ export default [
                             {
                                 name: "number",
                                 description: "Position of spouse",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "marry",
@@ -1996,9 +1996,9 @@ export default [
                             {
                                 name: "mention",
                                 description: "Mention of the user",
-                                required: true
-                            }
-                        ]
+                                required: true,
+                            },
+                        ],
                     },
                     {
                         usage: ">marry <user id>",
@@ -2007,11 +2007,11 @@ export default [
                             {
                                 name: "user id",
                                 description: "Discord ID of the user",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "showproposals",
@@ -2019,11 +2019,11 @@ export default [
                 usages: [
                     {
                         usage: ">showproposals",
-                        description: "Displays list of proposals"
-                    }
-                ]
-            }
-        ]
+                        description: "Displays list of proposals",
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "nsfw",
@@ -2038,11 +2038,11 @@ export default [
                         parameters: [
                             {
                                 name: "tags",
-                                description: "A tag from e621; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space"
-                            }
-                        ]
-                    }
-                ]
+                                description: "A tag from e621; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "gelbooru",
@@ -2054,12 +2054,12 @@ export default [
                         parameters: [
                             {
                                 name: "tags",
-                                description: "A tag from Gelbooru; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space"
-                            }
-                        ]
-                    }
+                                description: "A tag from Gelbooru; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space",
+                            },
+                        ],
+                    },
                 ],
-                aliases: ["gel"]
+                aliases: ["gel"],
             },
             {
                 name: "rule34",
@@ -2071,12 +2071,12 @@ export default [
                         parameters: [
                             {
                                 name: "tags",
-                                description: "A tag from Rule 34; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space"
-                            }
-                        ]
-                    }
+                                description: "A tag from Rule 34; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space",
+                            },
+                        ],
+                    },
                 ],
-                aliases: ["r34"]
+                aliases: ["r34"],
             },
             {
                 name: "yandere",
@@ -2088,13 +2088,13 @@ export default [
                         parameters: [
                             {
                                 name: "tags",
-                                description: "A tag from yande.re; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                description: "A tag from yande.re; use a - in front of it to exclude the tag. (e.g. -glasses). Separate tags with a space",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "pasta",
@@ -2109,16 +2109,16 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of the pasta. Multiple words should be in quotes",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "content",
                                 description: "Content of the pasta",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "deletepasta",
@@ -2130,11 +2130,11 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of the pasta",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "editpasta",
@@ -2146,26 +2146,26 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of the pasta. Multiple words should be in quotes",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "new content",
                                 description: "New content you want for the pasta",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "hatedpasta",
                 description: "Displays list of pastas you hate",
                 usages: [
                     {
-                        usage: ">hatedpasta"
-                    }
+                        usage: ">hatedpasta",
+                    },
                 ],
-                aliases: ["hatedpastas", "hatepastalist"]
+                aliases: ["hatedpastas", "hatepastalist"],
             },
             {
                 name: "hatepasta",
@@ -2177,11 +2177,11 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of pasta",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "infopasta",
@@ -2193,21 +2193,21 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of pasta",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "lovedpasta",
                 description: "Displays list of pastas you like",
                 usages: [
                     {
-                        usage: ">lovedpasta"
-                    }
+                        usage: ">lovedpasta",
+                    },
                 ],
-                aliases: ["lovedpastas", "favouritepastas", "lovepastalist"]
+                aliases: ["lovedpastas", "favouritepastas", "lovepastalist"],
             },
             {
                 name: "lovepasta",
@@ -2218,20 +2218,20 @@ export default [
                         parameters: [
                             {
                                 name: "name",
-                                description: "Name of pasta"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Name of pasta",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "mypasta",
                 description: "Displays all the pasta you created",
                 usages: [
                     {
-                        usage: ">mypasta"
-                    }
-                ]
+                        usage: ">mypasta",
+                    },
+                ],
             },
             {
                 name: "pasta",
@@ -2243,29 +2243,29 @@ export default [
                             {
                                 name: "name",
                                 description: "Name of the pasta",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "searchpasta",
                 description: "Search pasta based on term",
                 usages: [
                     {
-                        usage:">searchpasta <term>",
+                        usage: ">searchpasta <term>",
                         parameters: [
                             {
                                 name: "term",
                                 description: "What you want to search",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "reactions",
@@ -2275,56 +2275,56 @@ export default [
                 description: "Display a confused reaction image",
                 usages: [
                     {
-                        usage: ">confused"
-                    }
-                ]
+                        usage: ">confused",
+                    },
+                ],
             },
             {
                 name: "cry",
                 description: "Display a crying reaction image",
                 usages: [
                     {
-                        usage: ">cry"
-                    }
-                ]
+                        usage: ">cry",
+                    },
+                ],
             },
             {
                 name: "lewd",
                 description: "Display a lewd reaction image",
                 usages: [
                     {
-                        usage: ">lewd"
-                    }
-                ]
+                        usage: ">lewd",
+                    },
+                ],
             },
             {
                 name: "pout",
                 description: "Display a pouting reaction image",
                 usages: [
                     {
-                        usage: ">pout"
-                    }
-                ]
+                        usage: ">pout",
+                    },
+                ],
             },
             {
                 name: "smug",
                 description: "Display a smug reaction image",
                 usages: [
                     {
-                        usage: ">smug"
-                    }
-                ]
+                        usage: ">smug",
+                    },
+                ],
             },
             {
                 name: "stare",
                 description: "Display a staring reaction image",
                 usages: [
                     {
-                        usage: ">stare"
-                    }
-                ]
-            }
-        ]
+                        usage: ">stare",
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "role management",
@@ -2340,31 +2340,31 @@ export default [
                             {
                                 name: "role",
                                 description: "Name of role. Must be in quotes",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "-automatic",
-                                description: "Sets whether the role is given when the person levels up. Ex. '-automatic:true'"
+                                description: "Sets whether the role is given when the person levels up. Ex. '-automatic:true'",
                             },
                             {
                                 name: "-optable",
-                                description: "Sets whether the role will be displayed in '>iamlist'. Ex. '-optable:true'"
+                                description: "Sets whether the role will be displayed in '>iamlist'. Ex. '-optable:true'",
                             },
                             {
                                 name: "-level-required",
-                                description: "Sets level requirement to obtain. Ex. '-level-required:10'"
+                                description: "Sets level requirement to obtain. Ex. '-level-required:10'",
                             },
                             {
                                 name: "-role-required",
-                                description: "Sets what other role is required to obtain the role. Ex. '-role-required:User'"
+                                description: "Sets what other role is required to obtain the role. Ex. '-role-required:User'",
                             },
                             {
                                 name: "-price",
-                                description: "Sets amount of mekos needed to buy the role. Ex. '-price:50000'"
-                            }
-                        ]
-                    }
-                ]
+                                description: "Sets amount of mekos needed to buy the role. Ex. '-price:50000'",
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "iam",
@@ -2376,11 +2376,11 @@ export default [
                             {
                                 name: "role",
                                 description: "Name of role from '>iamlist'",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "iamnot",
@@ -2392,22 +2392,22 @@ export default [
                             {
                                 name: "role",
                                 description: "Name of role from '>iamlist'",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "iamlist",
                 description: "List of self-assignable roles",
                 usages: [
                     {
-                        usage: ">iamlist"
-                    }
-                ]
-            }
-        ]
+                        usage: ">iamlist",
+                    },
+                ],
+            },
+        ],
     },
     {
         name: "settings",
@@ -2417,9 +2417,9 @@ export default [
                 descriptions: "Displays the list of all available languages",
                 usages: [
                     {
-                        usage: ">listlocale"
-                    }
-                ]
+                        usage: ">listlocale",
+                    },
+                ],
             },
             {
                 name: "setnotifications",
@@ -2431,16 +2431,16 @@ export default [
                             {
                                 name: "type",
                                 description: "Type of notification",
-                                required: true
+                                required: true,
                             },
                             {
                                 name: "value",
                                 description: "Whether notifications will be displayed",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "setlocale",
@@ -2452,11 +2452,11 @@ export default [
                             {
                                 name: "locale",
                                 description: "Language you want to change to",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "setprefix",
@@ -2468,11 +2468,11 @@ export default [
                             {
                                 name: "prefix",
                                 description: "Prefix you want to change to",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "showmodule",
@@ -2484,30 +2484,30 @@ export default [
                             {
                                 name: "module",
                                 description: "Name of module",
-                                required: true
-                            }
-                        ]
-                    }
-                ]
+                                required: true,
+                            },
+                        ],
+                    },
+                ],
             },
             {
                 name: "showmodules",
                 description: "Show what modules are enabled for the channel",
                 usages: [
                     {
-                        usage: ">showmodules"
-                    }
-                ]
+                        usage: ">showmodules",
+                    },
+                ],
             },
             {
                 name: "syncavatar",
                 description: "Sync your avatar to the database",
                 usages: [
                     {
-                        usage: ">syncavatar"
-                    }
-                ]
-            }
-        ]
-    }
-]
+                        usage: ">syncavatar",
+                    },
+                ],
+            },
+        ],
+    },
+];
