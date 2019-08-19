@@ -17,7 +17,7 @@ export default class About extends React.Component<RouteComponentProps> {
             <p className="has-text-white">
               Miki is a bot that focuses on community related events.She can do
               anything from playing games with you, to showing you progress, and
-              ofcourse with memes. She has a little bit of everything and all
+              of course with memes. She has a little bit of everything and all
               features are made with hand by yours truly. Her design is
               completely original, and a lot of thought went into hers.
             </p>
