@@ -4,6 +4,7 @@ import TestimonialComponent from "../components/testimonial"
 import { RouteComponentProps } from "@reach/router"
 import NavbarComponent from "../components/navbar"
 import { FooterComponent } from "../components/footer"
+import { Helmet } from "react-helmet";
 
 const landingImageStyle = {
   borderRadius: "15px",
@@ -45,6 +46,16 @@ export default class Home extends React.Component<RouteComponentProps> {
   render() {
     return (
       <div>
+        <Helmet>
+        <title>Miki - The Discord bot!</title>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
+          <meta name="description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Miki - The Discord Bot" />
+          <meta property="og:description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
+        </Helmet>
+
         <NavbarComponent />
         <div>
           <div className="section hero is-fullheight is-textured first">
