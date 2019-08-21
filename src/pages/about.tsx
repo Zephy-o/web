@@ -5,11 +5,21 @@ import { FooterComponent } from "../components/footer"
 import devs from "../data/devs"
 import discordStaff from "../data/staff"
 import contributers from "../data/contributers"
+import { Helmet } from "react-helmet"
 
 export default class About extends React.Component<RouteComponentProps> {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Miki - The Discord bot!</title>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
+          <meta name="description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Miki - The Discord Bot" />
+          <meta property="og:description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
+        </Helmet>
         <NavbarComponent />
         <div className="section hero is-medium is-textured">
           <div className="container content">
@@ -17,7 +27,7 @@ export default class About extends React.Component<RouteComponentProps> {
             <p className="has-text-white">
               Miki is a bot that focuses on community related events.She can do
               anything from playing games with you, to showing you progress, and
-              ofcourse with memes. She has a little bit of everything and all
+              of course with memes. She has a little bit of everything and all
               features are made with hand by yours truly. Her design is
               completely original, and a lot of thought went into hers.
             </p>
