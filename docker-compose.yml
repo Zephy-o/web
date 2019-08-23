@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: '.'
+    image: 'miki.ai'
+    container_name: 'web-nginx'
+    restart: 'unless-stopped'
+    network_mode: 'host'
+    ports:
+      - '8080:8080'
