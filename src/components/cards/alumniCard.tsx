@@ -1,7 +1,7 @@
 import * as React from "react"
 
 export class AlumniCard extends React.Component<AlumniCardProps> {
-    constructor(props : AlumniCardProps) {
+    constructor(props: AlumniCardProps) {
         super(props);
         console.log(props);
     }
@@ -16,5 +16,5 @@ export class AlumniCard extends React.Component<AlumniCardProps> {
 }
 
 interface AlumniCardProps {
-    name: String
+    name: string;
 }

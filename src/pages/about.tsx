@@ -148,7 +148,7 @@ export default class About extends React.Component<RouteComponentProps> {
             <h1 className="nm">Alumni</h1>
             <p>These lovely people used to help Miki in the past!</p>
             <div className="section columns is-multiline is-flex is-flex-centered">
-              {contributers.map((value, index) => <AlumniCard name={value}/>)}
+              {contributers.map((value, index) => <AlumniCard key={index} name={value}/>)}
             </div>
           </section>
         </div>
