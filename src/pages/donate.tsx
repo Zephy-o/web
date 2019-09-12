@@ -37,7 +37,8 @@ export default class Donate extends React.Component<RouteComponentProps> {
         >
           <div className="container">
             <h3 className="has-text-white is-padded is-marginless">
-              <i className="fab fa-patreon seperated">Patreon</i>
+              <i className="fab fa-patreon seperated"></i>
+              Patreon
             </h3>
           </div>
         </div>

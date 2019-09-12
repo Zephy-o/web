@@ -6,6 +6,7 @@ import devs from "../data/devs"
 import discordStaff from "../data/staff"
 import contributers from "../data/contributers"
 import { Helmet } from "react-helmet"
+import { AlumniCard } from "../components/cards/alumniCard"
 
 export default class About extends React.Component<RouteComponentProps> {
   render() {
@@ -143,16 +144,11 @@ export default class About extends React.Component<RouteComponentProps> {
             </div>
           </section>
 
-          <section className=" section content container has-text-centered">
+          <section className="section content container has-text-centered">
             <h1 className="nm">Alumni</h1>
+            <p>These lovely people used to help Miki in the past!</p>
             <div className="section columns is-multiline is-flex is-flex-centered">
-              {contributers.map((value, index) => {
-                return (
-                  <div key={index} className="card column seperated">
-                    <p className="has-text-centered">{value}</p>
-                  </div>
-                )
-              })}
+              {contributers.map((value, index) => <AlumniCard name={value}/>)}
             </div>
           </section>
         </div>

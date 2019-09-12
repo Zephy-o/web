@@ -58,12 +58,12 @@ export default class Home extends React.Component<RouteComponentProps> {
 
         <NavbarComponent />
         <div>
-          <div className="section hero is-fullheight is-textured first">
+          <div className="section hero is-middle is-textured first">
             <div className="container hero-body">
               <div className="columns is-vcentered">
                 <div className="column is-5 content">
                   <h1 className="title has-text-white is-spaced">
-                    MIKI for Discord
+                    Miki for DISCORD
                   </h1>
                   <p className="subtitle has-text-white">
                     Your solution to a great Discord Community!
