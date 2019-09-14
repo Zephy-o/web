@@ -23,6 +23,6 @@ export default [
     name: "Fuzen",
     desc: "Infrastructure Engineer",
     uid: "134090963395149824",
-    github: "https://github.com/fuzen_py"
+    github: "https://github.com/fuzen-py"
   }
 ];
