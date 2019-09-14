@@ -94,9 +94,9 @@ export default class Donate extends React.Component<RouteComponentProps> {
           <div className="section has-text-centered">
             <Button isRounded 
               href="https://www.patreon.com/bePatron?u=2542689" 
-              value="Become a Patreon"
+              value="Become a patron"
               size={Size.LARGE}
-              icon="fad fa-coffee"
+              icon="fad fa-money-bill-wave"
             />
           </div>
         </div>
