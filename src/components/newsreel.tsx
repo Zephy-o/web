@@ -7,9 +7,6 @@ const api = new Ghost({
     version: "v2"
 });
 
-interface NewsReelProps {
-}
-
 interface NewsReelState {
     posts: NewsReelItem[]
 }
@@ -36,7 +33,7 @@ export class NewsReel extends React.Component<NewsReelProps, NewsReelState> {
         let posts = await api.posts.browse({limit: 4})
         
         this.setState({
-            posts: posts.map(x => <NewsReelItem title={x.title} href={x.url} imageUrl={x.feature_image} text={getTextCondensed(x.excerpt)}/>)
+            posts: posts.map(x, i => <NewsReelItem key={i} title={x.title} href={x.url} imageUrl={x.feature_image} text={getTextCondensed(x.excerpt)}/>)
         })
     }
 
