@@ -14,28 +14,29 @@ export default function HTML(props) {
         {props.headComponents}
         <script src="https://kit.fontawesome.com/07e5b6c21a.js"></script>
         <script type="text/javascript" src="https://blog.miki.ai/public/ghost-sdk.min.js"></script>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Miki",
-          "url": "http://www.miki.ai",
-          "logo": "https://cdn.miki.ai/branding/logo-dark@1024.png",
-          "foundingDate": "2015",
-          "founders": [
-          {
-          "@type": "Person",
-          "name": "Mike Veldsink"
-          }],
-          "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "hello@miki.ai"
-          },
-          "sameAs": [ 
-          "https://twitter.com/miki_discord",
-          ]}
-        }`}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Miki",
+            "url": "http://www.miki.ai",
+            "logo": "https://cdn.miki.ai/branding/logo-dark@1024.png",
+            "foundingDate": "2015",
+            "founders": [
+            {
+            "@type": "Person",
+            "name": "Mike Veldsink"
+            }],
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "hello@miki.ai",
+            "url": "https://miki.ai/about"
+            },
+            "sameAs": [ 
+              "https://twitter.com/miki_discord"
+            ]}
+          }`}} />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
