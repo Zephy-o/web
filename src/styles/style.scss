@@ -144,7 +144,6 @@ a.about-link {
 	background-color: ghostwhite;
 	padding: 30px 50px 65px 50px;
 	font-size: 1.2rem;
-	font-weight: 500;
 	margin: 0 0 -40px;
 	line-height: 1.6em;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -235,14 +234,4 @@ a.about-link {
         transform: translateX(0);
         opacity: 1;
     }
-}
-
-.wave {
-	background: url(../img/wave.svg) repeat-x;
-	background-size: contain;
-	position:absolute;
-	width: 100000px;
-	height: 10vh;
-	top: calc(100vh - 10vh);
-	left: 0;
 }

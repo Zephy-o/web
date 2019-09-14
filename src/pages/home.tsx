@@ -3,8 +3,10 @@ import LandingImage from "../img/landing-image.png"
 import TestimonialComponent from "../components/testimonial"
 import { RouteComponentProps } from "@reach/router"
 import NavbarComponent from "../components/navbar"
+import NewsReel from "../components/newsreel"
 import { FooterComponent } from "../components/footer"
 import { Helmet } from "react-helmet";
+import { Button, Size, Type} from "../components/base/button"
 
 const landingImageStyle = {
   borderRadius: "15px",
@@ -47,7 +49,6 @@ export default class Home extends React.Component<RouteComponentProps> {
     return (
       <div>
         <Helmet>
-        <script src="https://kit.fontawesome.com/07e5b6c21a.js"></script>
         <title>Miki - The Discord bot!</title>
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
@@ -71,23 +72,22 @@ export default class Home extends React.Component<RouteComponentProps> {
                   </p>
                   <div className="field is-grouped">
                     <div className="control">
-                      <a
-                        className="button is-large is-info"
-                        href="/invite?ref=miki_ai"
-                      >
-                        <span className="icon">
-                          <i className="fab fa-discord"></i>
-                        </span>
-                        <span>Invite</span>
-                      </a>
+                      <Button 
+                        href="/invite?ref=miki_ai" 
+                        size={Size.LARGE} 
+                        type={Type.INFO} 
+                        value="Invite"
+                        icon="fab fa-discord"
+                      />
                     </div>
                     <div className="control">
-                      <a
-                        className="button is-large is-white is-outlined"
+                      <Button
                         href="https://discord.gg/39Xpj7K"
-                      >
-                        Support
-                      </a>
+                        size={Size.LARGE}
+                        type={Type.WHITE}
+                        value="Support"
+                        isOutlined
+                      />
                     </div>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export default class Home extends React.Component<RouteComponentProps> {
           </div>
           <div className="section has-background-lighter container">
             <div className="has-text-centered">
-              <h2 className="title is-spaced">Why pick Miki?</h2>
+              <h2 className="title is-spaced">Why pick MIKI?</h2>
               <p>
                 Miki has already won the hearts of millions of people and
                 continues to do so with her rich set of functions.
@@ -153,7 +153,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="column section content">
                 <div className="columns">
                   <div className="column has-text-centered is-2">
-                    <i className="fad fa-user fa-3x has-text-primary"></i>
+                    <i className="fad fa-sparkles fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
                     <h1>Uncover Miki's potential!</h1>
@@ -172,7 +172,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="column section content">
                 <div className="columns">
                   <div className="column has-text-centered is-2">
-                    <i className="fad fa-cog fa-3x has-text-primary"></i>
+                    <i className="fad fa-chart-line fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
                     <h1>Always improving!</h1>
@@ -224,7 +224,7 @@ export default class Home extends React.Component<RouteComponentProps> {
           </div>
           <div className="section hero is-small has-text-centered has-background-primary is-textured">
             <div className="hero-body">
-              <h2 className="has-text-white title">Get started with Miki!</h2>
+              <h2 className="has-text-white title">Get started with MIKI</h2>
               <a
                 className="has-shadow button is-large seperated is-info is-smooth"
                 href="/invite?ref=miki_ai"
@@ -241,14 +241,8 @@ export default class Home extends React.Component<RouteComponentProps> {
           </div>
           <div className="section content container">
             <h3 className="has-text-centered">Latest news!</h3>
-            <div className="columns" id="updates"></div>
             <div className="has-text-centered">
-              <a className="button is-large is-outlined is-primary">
-                <span className="icon is-large">
-                  <i className="fad fa-bell"></i>
-                </span>
-                <span>Subscribe</span>
-              </a>
+              <NewsReel/>
             </div>
           </div>
           <script

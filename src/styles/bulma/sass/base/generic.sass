@@ -1,10 +1,12 @@
 $body-background-color: $white !default
 $body-size: 16px !default
 $body-rendering: optimizeLegibility !default
-$body-family: $family-primary !default
+$body-family: $family-text !default
 $body-color: $text !default
 $body-weight: $weight-normal !default
 $body-line-height: 1.5 !default
+
+$header-family: $family-primary !default
 
 $code-family: $family-code !default
 $code-padding: 0.25em 0.5em 0.25em !default
@@ -44,6 +46,14 @@ input,
 select,
 textarea
   font-family: $body-family
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $header-family
 
 code,
 pre
