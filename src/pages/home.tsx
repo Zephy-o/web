@@ -243,12 +243,6 @@ export default class Home extends React.Component<RouteComponentProps> {
             <h3 className="has-text-centered">Latest news!</h3>
             <div className="has-text-centered">
               <NewsReel/>
-              <a className="button is-large is-outlined is-primary">
-                <span className="icon is-large">
-                  <i className="fad fa-bell"></i>
-                </span>
-                <span>Subscribe</span>
-              </a>
             </div>
           </div>
           <script

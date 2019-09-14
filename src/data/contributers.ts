@@ -3,7 +3,6 @@ export default [
   "Brandon",
   "Drummss",
   "Florestina",
-  "Fuzen",
   "GrammarJew",
   "Igarashi",
   "Luke",

@@ -14,11 +14,12 @@ interface NewsReelState {
     posts: NewsReelItem[]
 }
 
+// TODO(veld): turn condensation length into a or prop of newsreel
 function getTextCondensed(text: string): string {
-    if(text.length < 250) {
+    if(text.length < 200) {
         return text;
     }
-    return text.substring(0, 250) + "...";
+    return text.substring(0, 200) + "...";
 }
 
 export class NewsReel extends React.Component<NewsReelProps, NewsReelState> {
@@ -60,13 +61,13 @@ export class NewsReelItem extends React.Component<NewsReelItemProps> {
 
     render() {
         return (
-            <a className="column" href={this.props.href}>
+            <a className="column has-text-left" href={this.props.href}>
                 <div className="card">
                     { this.props.imageUrl != null ?
                     (<div className="card-image">
                             <img className="image" src={this.props.imageUrl}/>
-                    </div>) : null 
-                    }
+                    </div>) : null // TODO(veld): clean this up. 
+                    } 
                     <div className="card-content">
                         <h4>{this.props.title}</h4>
                         <p>{this.props.text}</p>
