@@ -47,6 +47,7 @@ export default class Home extends React.Component<RouteComponentProps> {
     return (
       <div>
         <Helmet>
+        <script src="https://kit.fontawesome.com/07e5b6c21a.js"></script>
         <title>Miki - The Discord bot!</title>
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
@@ -113,7 +114,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="column section content">
                 <div className="columns">
                   <div className="column has-text-centered is-2">
-                    <i className="fal fa-user fa-3x has-text-primary"></i>
+                    <i className="fad fa-user fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
                     <h1>Community</h1>
@@ -131,7 +132,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="column section content">
                 <div className="columns">
                   <div className="column has-text-centered is-2">
-                    <i className="fal fa-cog fa-3x has-text-primary"></i>
+                    <i className="fad fa-cog fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
                     <h1>Complete server control</h1>
@@ -152,7 +153,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="column section content">
                 <div className="columns">
                   <div className="column has-text-centered is-2">
-                    <i className="fal fa-user fa-3x has-text-primary"></i>
+                    <i className="fad fa-user fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
                     <h1>Uncover Miki's potential!</h1>
@@ -171,7 +172,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="column section content">
                 <div className="columns">
                   <div className="column has-text-centered is-2">
-                    <i className="fal fa-cog fa-3x has-text-primary"></i>
+                    <i className="fad fa-cog fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
                     <h1>Always improving!</h1>
@@ -244,7 +245,7 @@ export default class Home extends React.Component<RouteComponentProps> {
             <div className="has-text-centered">
               <a className="button is-large is-outlined is-primary">
                 <span className="icon is-large">
-                  <i className="fas fa-bell"></i>
+                  <i className="fad fa-bell"></i>
                 </span>
                 <span>Subscribe</span>
               </a>
