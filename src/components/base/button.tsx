@@ -64,11 +64,10 @@ export class Button extends React.Component<ButtonProps> {
         }
 
         return (
-            <a  className={"button" 
-                         + " " + sizeCSSValue(this.props.size) 
-                         + " " + typeCSSValue(this.props.type)
-                         + (this.props.isRounded ? " is-rounded" : "")
-                         + (this.props.isOutlined ? " is-outlined" : "")} 
+            <a className={`button ${sizeCSSValue(this.props.size)} 
+                    ${typeCSSValue(this.props.type)}
+                    ${(this.props.isRounded ? " is-rounded" : "")} 
+                    ${(this.props.isOutlined ? " is-outlined" : "")}`}
                 href={this.props.href}>
                 {iconDiv}
                 <span>
