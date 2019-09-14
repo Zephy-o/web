@@ -12,8 +12,8 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <script src="https://kit.fontawesome.com/07e5b6c21a.js"></script>
-        <script type="text/javascript" src="https://blog.miki.ai/public/ghost-sdk.min.js"></script>
+        <script async src="https://kit.fontawesome.com/07e5b6c21a.js"></script>
+        <script async type="text/javascript" src="https://blog.miki.ai/public/ghost-sdk.min.js"></script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: `{
             "@context": "https://schema.org",
