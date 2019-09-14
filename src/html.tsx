@@ -16,41 +16,26 @@ export default function HTML(props) {
         <script type="text/javascript" src="https://blog.miki.ai/public/ghost-sdk.min.js"></script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
         {
-          "@context" : "http://schema.org",
-          "@type" : "SoftwareApplication",
-          "name" : "MIKI",
-          "image" : "https://cdn.miki.ai/branding/logo-dark@1024.png",
-          "url" : "https://miki.ai/",
-          "author" : {
-            "@type" : "Person",
-            "name" : "Mike Veldsink"
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Miki",
+          "url": "http://www.miki.ai",
+          "logo": "https://cdn.miki.ai/branding/logo-dark@1024.png",
+          "foundingDate": "2015",
+          "founders": [
+          {
+          "@type": "Person",
+          "name": "Mike Veldsink"
+          }],
+          "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "hello@miki.ai"
           },
-          "applicationCategory" : "EntertainmentApplication",
-          "downloadUrl" : "https://miki.ai/invite.html?mikiai",
-          "review" : [ {
-            "@type" : "Review",
-            "author" : {
-              "@type" : "Person",
-              "name" : "Kibii TV"
-            },
-            "reviewBody" : "Our server was losing its foundation until Miki came aboard, the community was united with all of its unique features and brought new friendships all-around!"
-          }, {
-            "@type" : "Review",
-            "author" : {
-              "@type" : "Person",
-              "name" : "Kongregation on Discord"
-            },
-            "reviewBody" : "Miki helps keep the flow of conversations going with her wide variety of fun commands in our server. She&#39;s great for small and large servers alike, providing both entertainment and utility!"
-          }, {
-            "@type" : "Review",
-            "author" : {
-              "@type" : "Person",
-              "name" : "ESO SQUAD"
-            },
-            "reviewBody" : "With so many customizations and commands, Miki is one of the ultimate utility and fun bots we&#39;ve seen. And trust me, we&#39;ve gone through plenty!"
-          } ]
-        }
-        </script>`}} />
+          "sameAs": [ 
+          "https://twitter.com/miki_discord",
+          ]}
+        }`}} />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
