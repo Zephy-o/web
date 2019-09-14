@@ -61,7 +61,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                 <div className="column is-offset-2 is-10 is-hidden-touch is-hidden-desktop-only image">
                   <img
                     className="has-shadow is-smooth"
-                    src="https:/cdn.miki.ai/web/landing/landing-image.png"
+                    src="https://cdn.miki.ai/web/landing/landing-image.png"
                     style={landingImageStyle}
                     id="landing-img"
                   />
