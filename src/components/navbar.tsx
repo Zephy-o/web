@@ -1,25 +1,24 @@
 import * as React from "react";
 import { Link } from "@reach/router";
 
-interface NavbarProps {
+export interface NavbarProps {
     className: string
 }
 
-interface NavbarState {
+export interface NavbarState {
     active: boolean;
 }
 
-export default class Navbar extends React.Component<NavbarProps, NavbarState> {
+export default class Navbar<Props extends NavbarProps, State extends NavbarState> extends React.Component<Props, State> {
     public static defaultProps = {
         className: "",
-        isLanding: false
     };
 
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = ({
             active: false
-        };
+        } as State);
         this.toggle = this.toggle.bind(this);
         this.getNavbarClass = this.getNavbarClass.bind(this);
     }

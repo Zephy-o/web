@@ -1,36 +1,45 @@
-import * as React from "react";
-import { Link } from "@reach/router";
-import Navbar from "./navbar";
+import Navbar, { NavbarProps, NavbarState } from "./navbar";
 
-export default class NavbarLanding extends Navbar {
-    public static defaultProps = {
-        className: "navbar",
-        isLanding: false
-    };
+interface NavbarLandingState extends NavbarState {
+    scrollY: number
+}
 
+export default class NavbarLanding extends Navbar<NavbarProps, NavbarLandingState> {
     constructor(props) {
         super(props);
         this.state = {
-            active: false,
-        };
-        this.toggle = this.toggle.bind(this);
+            scrollY: 0,
+            ...this.state
+        }
+
         this.getNavbarClass = this.getNavbarClass.bind(this);
         this.componentDidMount = this.componentDidMount.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
     
     getNavbarClass() {
-        return window.scrollY > 0
+        return this.state.scrollY > 0
             ? `navbar ${this.props.className}` 
             : `navbar ${this.props.className} is-dark navbar-large`;
     }
 
+    handleScroll(e: Event) {
+        if(this.state.scrollY == 0 && window.scrollY != 0) {
+            this.setState({
+                scrollY: window.scrollY
+            });
+        } else if(this.state.scrollY != 0 && window.scrollY == 0) {
+            this.setState({
+                scrollY: window.scrollY
+            });
+        }
+    }
+
     componentDidMount() {
-        window.addEventListener("scroll", (e) => {
-            if(window.scrollY == 0) {
-                this.forceUpdate();
-            } else if(window.scrollY != 0) {
-                this.forceUpdate();
-            }
-        });
+        window.addEventListener("scroll", this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
     }
 }
