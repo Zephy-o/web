@@ -13,7 +13,7 @@ export default class TestimonialComponent extends React.Component<TestimonialPro
             <figure className="testimonial">
                 <blockquote className="has-background-light">{this.props.quote}</blockquote>
                 <div className="author">
-                    <img src={this.props.imageURL} alt={this.props.imageAlt}/>
+                    <img src={this.props.imageURL} loading="lazy" alt={this.props.imageAlt}/>
                     <h5 className="has-text-black">
                         {this.props.name}
                     </h5>

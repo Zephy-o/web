@@ -62,7 +62,7 @@ export class NewsReelItem extends React.Component<NewsReelItemProps> {
                 <div className="card">
                     { this.props.imageUrl != null ?
                     (<div className="card-image">
-                            <img className="image" src={this.props.imageUrl}/>
+                            <img className="image" loading="lazy" src={this.props.imageUrl}/>
                     </div>) : null // TODO(veld): clean this up. 
                     } 
                     <div className="card-content">
