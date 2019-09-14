@@ -14,7 +14,7 @@ export class FooterComponent extends React.Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://suggestions.miki.ai">
+                                <a href="https://suggestions.miki.ai/">
                                     Feedback
                                 </a>
                             </li>

@@ -2,6 +2,7 @@ import * as React from "react"
 import { RouteComponentProps } from "@reach/router"
 import NavbarComponent from "../components/navbar"
 import { FooterComponent } from "../components/footer"
+import { Button, Size, Type } from "../components/base/button"
 import donate1 from "../img/donate/donate_1.png"
 import donate2 from "../img/donate/donate_2.png"
 import donate3 from "../img/donate/donate_3.png"
@@ -31,10 +32,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
             </p>
           </div>
         </div>
-        <div
-          className="content is-large is-vcentered"
-          style={{ backgroundColor: "rgb(236, 108, 88)" }}
-        >
+        <div className="content is-large is-vcentered has-background-primary">
           <div className="container">
             <h3 className="has-text-white is-padded is-marginless">
               <i className="fab fa-patreon seperated"></i>
@@ -93,25 +91,16 @@ export default class Donate extends React.Component<RouteComponentProps> {
             </div>
           </div>
 
-          <div className="has-text-centered">
-            <a
-              className="button is-large"
-              href="https://www.patreon.com/bePatron?u=2542689"
-            >
-              <div
-                className="button is-rounded is-large"
-                style={{ color: "#fff", backgroundColor: "#ec6c58" }}
-              >
-                <i className="fab fa-patreon"></i> &nbsp; Become a Patreon
-              </div>
-            </a>
+          <div className="section has-text-centered">
+            <Button isRounded 
+              href="https://www.patreon.com/bePatron?u=2542689" 
+              value="Become a Patreon"
+              size={Size.LARGE}
+              icon="fad fa-coffee"
+            />
           </div>
         </div>
-
-        <div
-          className="content is-large is-vcentered"
-          style={{ backgroundColor: "rgb(100, 157, 189)" }}
-        >
+        <div className="content is-large has-background-primary is-vcentered">
           <div className="container">
             <h3 className="has-text-white is-padded is-marginless">
               <i className="fas fa-coffee seperated"></i> Ko-fi
@@ -146,18 +135,12 @@ export default class Donate extends React.Component<RouteComponentProps> {
           </div>
 
           <div className="section has-text-centered">
-            <a
-              href="https://ko-fi.com/velddy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                className="button is-rounded is-large"
-                style={{ color: "#fff", backgroundColor: "#649dbd" }}
-              >
-                <i className="fas fa-coffee"></i> &nbsp; Buy me a coffee
-              </div>
-            </a>
+            <Button isRounded 
+              href="https://ko-fi.com/velddy" 
+              value="Buy me a coffee"
+              size={Size.LARGE}
+              icon="fad fa-coffee"
+            />
           </div>
         </div>
 
