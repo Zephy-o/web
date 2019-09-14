@@ -123,7 +123,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
                     <article key={cmdKey} className="card" data={cmdValue.name}>
                       <div className="card-content">
                         <div className="columns">
-                          <div className="column.is-narrow">
+                          <div className="column is-narrow">
                             <b>>{cmdValue.name}</b>
                           </div>
                           <CommandDetailscolumn value={cmdValue} />
