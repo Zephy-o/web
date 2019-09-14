@@ -39,7 +39,7 @@ export class FooterComponent extends React.Component {
                         <b>Contact</b>
                         <ul>
                             <li>
-                                <a href="mailto:velddev@gmail.com">
+                                <a href="mailto:hello@miki.ai">
                                     Email
                                 </a>
                             </li>
