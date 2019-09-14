@@ -1,19 +1,33 @@
 import * as React from "react";
 import { Link } from "@reach/router";
 
+interface NavbarProps {
+    className: string
+}
+
 interface NavbarState {
     active: boolean;
 }
 
-export default class NavbarComponent extends React.Component<{}, NavbarState> {
+export default class Navbar extends React.Component<NavbarProps, NavbarState> {
+    public static defaultProps = {
+        className: "",
+        isLanding: false
+    };
+
     constructor(props) {
         super(props);
         this.state = {
             active: false
         };
         this.toggle = this.toggle.bind(this);
+        this.getNavbarClass = this.getNavbarClass.bind(this);
     }
     
+    getNavbarClass() {
+        return `navbar is-fixed-top has-shadow ${this.props.className}`;
+    }
+
     toggle() {
         this.setState({
             active: !this.state.active
@@ -23,13 +37,13 @@ export default class NavbarComponent extends React.Component<{}, NavbarState> {
     getActive(base) {
         if(this.state.active)
         {
-            return base + " is-active"; 
+            return `${base} is-active`; 
         }
         return base;
     }
 
     render() {
-        return <div className="navbar" id="global-nav-bar">
+        return <div className={`navbar ${this.getNavbarClass()}`} id="global-nav-bar">
             <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
@@ -48,10 +62,10 @@ export default class NavbarComponent extends React.Component<{}, NavbarState> {
                 </div>
                 <div className={this.getActive("navbar-menu")}>
                     <div className="navbar-end">
-                        <NavbarItemComponent href="/commands" value="Commands" />
-                        <NavbarItemComponent href="/about" value="About" />
-                        <NavbarItemComponent href="/donate" value="Donate" />
-                        <NavbarItemComponent href="https://blog.miki.ai/" value="Blog" />
+                        <NavbarItem href="/commands" value="Commands" />
+                        <NavbarItem href="/about" value="About" />
+                        <NavbarItem href="/donate" value="Donate" />
+                        <NavbarItem href="https://blog.miki.ai/" value="Blog" />
                     </div>
                 </div>
             </div>
@@ -64,7 +78,7 @@ interface NavbarItemProps {
     value: string;
 }
 
-class NavbarItemComponent extends React.Component<NavbarItemProps> {
+class NavbarItem extends React.Component<NavbarItemProps> {
     render() {
         if(this.props.href.startsWith("http"))
         {

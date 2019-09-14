@@ -1,50 +1,17 @@
 import * as React from "react"
-import LandingImage from "../img/landing-image.png"
 import TestimonialComponent from "../components/testimonial"
 import { RouteComponentProps } from "@reach/router"
-import NavbarComponent from "../components/navbar"
 import NewsReel from "../components/newsreel"
 import { FooterComponent } from "../components/footer"
 import { Helmet } from "react-helmet";
 import { Button, Size, Type} from "../components/base/button"
+import NavbarLanding from "../components/navbarLanding"
 
 const landingImageStyle = {
   borderRadius: "15px",
 }
 
 export default class Home extends React.Component<RouteComponentProps> {
-  constructor(props) {
-    super(props)
-    this.onLoad = this.onLoad.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener("load", this.onLoad)
-  }
-
-  onLoad() {
-    let previousPosition = window.scrollY
-    const header_nav = document.getElementById("global-nav-bar")
-
-    header_nav.classList.add(
-      "is-dark",
-      "navbar-large",
-      "is-fixed-top",
-      "is-smoother"
-    )
-    window.onscroll = () => {
-      if (window.scrollY > 0 && previousPosition === 0) {
-        header_nav.classList.remove("navbar-large")
-        header_nav.classList.remove("is-dark")
-      } else if (window.scrollY <= 0) {
-        header_nav.classList.add("navbar-large")
-        header_nav.classList.add("is-dark")
-      }
-
-      previousPosition = window.scrollY
-    }
-  }
-
   render() {
     return (
       <div>
@@ -58,7 +25,7 @@ export default class Home extends React.Component<RouteComponentProps> {
           <meta property="og:description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
         </Helmet>
 
-        <NavbarComponent />
+        <NavbarLanding className="navbar is-smoother is-fixed-top"/>
         <div>
           <div className="section hero is-middle is-textured first">
             <div className="container hero-body">
@@ -94,7 +61,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                 <div className="column is-offset-2 is-10 is-hidden-touch is-hidden-desktop-only image">
                   <img
                     className="has-shadow is-smooth"
-                    src={LandingImage}
+                    src="https:/cdn.miki.ai/web/landing/landing-image.png"
                     style={landingImageStyle}
                     id="landing-img"
                   />
