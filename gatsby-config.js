@@ -10,6 +10,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/commands`],
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Miki: the Discord bot!",
