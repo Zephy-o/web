@@ -149,11 +149,9 @@ export default class Home extends React.Component<RouteComponentProps> {
                       <b>new features are being released weekly</b>! Online
                       features, such as{" "}
                       <b>dashboards, profiles and configuration</b>, are in the
-                      works as we speak.We are consistently probing the
-                      community for more #[b ideas and suggestions] as we speak.
-                      Got a suggestion?{" "}
-                      <a href="https://suggestion.miki.ai">Share</a> yours
-                      today!
+                      works as we speak. We are consistently probing the
+                      community for more ideas and suggestions, Got a suggestion?{" "}
+                      <a href="https://suggestions.miki.ai">Share</a> yours today!
                     </p>
                   </div>
                 </div>
@@ -192,18 +190,20 @@ export default class Home extends React.Component<RouteComponentProps> {
           <div className="section hero is-small has-text-centered has-background-primary is-textured">
             <div className="hero-body">
               <h2 className="has-text-white title">Get started with MIKI</h2>
-              <a
-                className="has-shadow button is-large seperated is-info is-smooth"
-                href="/invite?ref=miki_ai"
-              >
-                Invite Miki!
-              </a>
-              <a
-                className="has-shadow button is-large seperated is-white is-outlined is-smooth"
-                href="/commands"
-              >
-                Learn more
-              </a>
+                <Button className="seperated"
+                    href="/invite?ref=miki_ai" 
+                    size={Size.LARGE} 
+                    type={Type.INFO} 
+                    value="Invite Miki!"
+                    icon="fab fa-discord"
+                  />
+                  <Button className="seperated"
+                    href="/commands"
+                    size={Size.LARGE}
+                    type={Type.WHITE}
+                    value="Show commands!"
+                    isOutlined
+                  />
             </div>
           </div>
           <div className="section content container">

@@ -38,14 +38,15 @@ function sizeCSSValue(size: Size): string {
     }
 }
 
-export class Button extends React.Component<ButtonProps> {
+export class Button extends React.PureComponent<ButtonProps> {
     public static defaultProps = {
         href: "",
         type: Type.PRIMARY,
         size: Size.NORMAL,
         icon: null,
         isRounded: false,
-        isOutlined: false
+        isOutlined: false,
+        className: ""
     };
 
     constructor(props) {
@@ -64,7 +65,7 @@ export class Button extends React.Component<ButtonProps> {
         }
 
         return (
-            <a className={`button ${sizeCSSValue(this.props.size)} 
+            <a className={`button ${this.props.className} ${sizeCSSValue(this.props.size)} 
                     ${typeCSSValue(this.props.type)}
                     ${(this.props.isRounded ? " is-rounded" : "")} 
                     ${(this.props.isOutlined ? " is-outlined" : "")}`}
@@ -86,6 +87,7 @@ interface ButtonProps {
     href: string
     isRounded: boolean
     isOutlined: boolean
+    className: string
 }
 
 export default Button;
