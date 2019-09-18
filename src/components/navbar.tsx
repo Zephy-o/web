@@ -42,33 +42,36 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
     }
 
     render() {
-        return <div className={`navbar ${this.getNavbarClass()}`} id="global-nav-bar">
-            <div className="container">
-                <div className="navbar-brand">
-                    <a className="navbar-item" href="/">
-                        <p className="seperated">MIKI</p>
-                    </a>
-                    <a className={this.getActive("navbar-burger has-text-centered")} 
-                            data-target="global-nav-menu" 
-                            aria-label="menu" 
-                            role="button" 
-                            aria-expanded="false" 
-                            onClick={this.toggle}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-                <div className={this.getActive("navbar-menu")}>
-                    <div className="navbar-end">
-                        <NavbarItem href="/commands" value="Commands" />
-                        <NavbarItem href="/about" value="About" />
-                        <NavbarItem href="/donate" value="Donate" />
-                        <NavbarItem href="https://blog.miki.ai/" value="Blog" />
+        return <React.Fragment>
+            <div className="navbar-space"></div>
+            <div className={`navbar ${this.getNavbarClass()}`} id="global-nav-bar">
+                <div className="container">
+                    <div className="navbar-brand">
+                        <a className="navbar-item" href="/">
+                            <p className="seperated">MIKI</p>
+                        </a>
+                        <a className={this.getActive("navbar-burger has-text-centered")} 
+                                data-target="global-nav-menu" 
+                                aria-label="menu" 
+                                role="button" 
+                                aria-expanded="false" 
+                                onClick={this.toggle}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div className={this.getActive("navbar-menu")}>
+                        <div className="navbar-end">
+                            <NavbarItem href="/commands" value="Commands" />
+                            <NavbarItem href="/about" value="About" />
+                            <NavbarItem href="/donate" value="Donate" />
+                            <NavbarItem href="https://blog.miki.ai/" value="Blog" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     }
 }
 
