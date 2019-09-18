@@ -36,7 +36,7 @@ export default class About extends React.Component<RouteComponentProps> {
         </div>
         <div>
           <section className="section content container has-text-centered">
-            <h1 className="nm">Development Team</h1>
+            <h2 className="nm">Development Team</h2>
             <p>Working on improving your Miki experience!</p>
             <div className="section columns is-multiline is-flex is-flex-centered">
               {devs.map((value, key) => {
@@ -117,7 +117,7 @@ export default class About extends React.Component<RouteComponentProps> {
           </section>
 
           <section className="section content container has-text-centered">
-            <h1>Server Moderators</h1>
+            <h2>Server Moderators</h2>
             <p>Keeping the support server clean!</p>
             <div className="section columns is-multiline is-flex is-flex-centered">
               {discordStaff.map((value, key) => {
@@ -145,7 +145,7 @@ export default class About extends React.Component<RouteComponentProps> {
           </section>
 
           <section className="section content container has-text-centered">
-            <h1 className="nm">Alumni</h1>
+            <h2 className="nm">Alumni</h2>
             <p>These lovely people used to help Miki in the past!</p>
             <div className="section columns is-multiline is-flex is-flex-centered">
               {contributers.map((value, index) => <AlumniCard key={index} name={value}/>)}
