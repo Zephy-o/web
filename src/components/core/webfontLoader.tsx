@@ -1,11 +1,11 @@
 import * as React from 'react';
 
 interface WebfontLoaderProps {
-    fonts : Array<string>
+    fonts: Array<string>;
 }
 
 interface WebfontLoaderState {
-    isHttps : boolean
+    isHttps: boolean;
 }
 
 class WebfontLoader extends React.Component<WebfontLoaderProps, WebfontLoaderState> {
@@ -28,14 +28,13 @@ class WebfontLoader extends React.Component<WebfontLoaderProps, WebfontLoaderSta
         return <React.Fragment>
             <script async src={`${this.getProtocol()}://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js`}>
             </script>
-            <script>
+            {/* <script>
                 {WebFont.load({
                     google: {
                     families: ['Droid Sans', 'Droid Serif']
                     }
                 });}
-            </script>
+            </script> */}
         </React.Fragment>
-        )
     }
 }

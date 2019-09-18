@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "@reach/router";
 
 export interface NavbarProps {
-    className: string
+    className: string;
 }
 
 export interface NavbarState {

@@ -1,7 +1,7 @@
 import Navbar, { NavbarProps, NavbarState } from "./navbar";
 
 interface NavbarLandingState extends NavbarState {
-    scrollY: number
+    scrollY: number;
 }
 
 export default class NavbarLanding extends Navbar<NavbarProps, NavbarLandingState> {
@@ -23,7 +23,7 @@ export default class NavbarLanding extends Navbar<NavbarProps, NavbarLandingStat
             : `navbar ${this.props.className} is-dark navbar-large`;
     }
 
-    handleScroll(e: Event) {
+    handleScroll(_: Event) {
         if(this.state.scrollY == 0 && window.scrollY != 0) {
             this.setState({
                 scrollY: window.scrollY

@@ -8,7 +8,7 @@ const api = new Ghost({
 });
 
 interface NewsReelState {
-    posts: NewsReelItem[]
+    posts: NewsReelItem[];
 }
 
 // TODO(veld): turn condensation length into a or prop of newsreel
@@ -30,7 +30,7 @@ export class NewsReel extends React.Component<NewsReelProps, NewsReelState> {
     }
 
     async componentDidMount() {
-        let posts = await api.posts.browse({limit: 4})
+        const posts = await api.posts.browse({limit: 4})
         
         this.setState({
             posts: posts.map((x, i) => <NewsReelItem key={i} title={x.title} href={x.url} imageUrl={x.feature_image} text={getTextCondensed(x.excerpt)}/>)
@@ -45,10 +45,10 @@ export class NewsReel extends React.Component<NewsReelProps, NewsReelState> {
 }
 
 interface NewsReelItemProps {
-    title: string
-    text: string
-    imageUrl: string
-    href: string
+    title: string;
+    text: string;
+    imageUrl: string;
+    href: string;
 }
 
 export class NewsReelItem extends React.Component<NewsReelItemProps> {

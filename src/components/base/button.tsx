@@ -80,14 +80,14 @@ export class Button extends React.PureComponent<ButtonProps> {
 }
 
 interface ButtonProps {
-    icon: string
-    size: Size
-    type: Type
-    value: string
-    href: string
-    isRounded: boolean
-    isOutlined: boolean
-    className: string
+    icon: string;
+    size: Size;
+    type: Type;
+    value: string;
+    href: string;
+    isRounded: boolean;
+    isOutlined: boolean;
+    className: string;
 }
 
 export default Button;

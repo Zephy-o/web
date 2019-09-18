@@ -1,10 +1,8 @@
 import * as React from "react"
-import TestimonialComponent from "../components/testimonial"
 import { RouteComponentProps } from "@reach/router"
-import NewsReel from "../components/newsreel"
 import { FooterComponent } from "../components/footer"
 import { Helmet } from "react-helmet";
-import { Button, Size, Type} from "../components/base/button"
+import { Button, Type} from "../components/base/button"
 import Navbar from "../components/navbar"
 
 const INVITE_URL = "https://discordapp.com/oauth2/authorize?&client_id=160185389313818624&scope=bot&permissions=355593334";
