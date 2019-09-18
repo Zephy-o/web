@@ -44,6 +44,12 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
     render() {
         return <React.Fragment>
             <div className="navbar-space"></div>
+                {this.renderNavbar()}
+        </React.Fragment>
+    }
+
+    renderNavbar() {
+        return (
             <div className={`navbar ${this.getNavbarClass()}`} id="global-nav-bar">
                 <div className="container">
                     <div className="navbar-brand">
@@ -71,7 +77,7 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        )
     }
 }
 

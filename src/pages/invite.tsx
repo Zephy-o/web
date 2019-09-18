@@ -28,28 +28,29 @@ export default class Invite extends React.Component<RouteComponentProps> {
         </Helmet>
         <Navbar className="navbar is-smoother is-fixed-top"/>
         <div className="section hero is-middle is-textured first">
-            <div className="container hero-body">
-                <div className="columns is-vcentered">
-                    <div className="column is-5 content">
-                        <h1 className="title has-text-white is-spaced">
-                            Hold on tight
-                        </h1>
-                        <p className="subtitle has-text-white">
-                            We're delivering your new favourite bot to your server!
-                        </p>
-                        <div className="field is-grouped">
-                            <div className="control">
-                                <Button
-                                href={INVITE_URL}
-                                type={Type.DANGER}
-                                value="Did it not work?"
-                                />
-                            </div>
-                            </div>
-                        </div>
+          <div className="container hero-body">
+            <div className="columns is-vcentered">
+              <div className="column is-5 content">
+                <h1 className="title has-text-white is-spaced">
+                  Hold on tight
+                </h1>
+                <p className="subtitle has-text-white">
+                  We're delivering your new favourite bot to your server!
+                </p>
+                <div className="field is-grouped">
+                    <div className="control">
+                      <Button
+                        href={INVITE_URL}
+                        type={Type.DANGER}
+                        value="Did it not work?"
+                        isOutlined
+                      />
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         <FooterComponent />
       </div>
     )

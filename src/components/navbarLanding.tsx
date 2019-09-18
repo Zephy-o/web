@@ -42,4 +42,8 @@ export default class NavbarLanding extends Navbar<NavbarProps, NavbarLandingStat
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
     }
+
+    render() {
+        return super.renderNavbar();
+    }
 }

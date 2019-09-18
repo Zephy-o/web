@@ -93,9 +93,10 @@ export default class Commands extends React.Component<RouteComponentProps> {
           <meta property="og:description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
         </Helmet>
         <NavbarComponent />
-        <div className="section hero is-textured">
+        <div className="section hero is-medium is-textured">
           <div className="container content">
             <h1 className="title has-text-light">Commands for Miki</h1>
+            <p className="description has-text-light">Here you can find extended information about all of Mikis commands!</p>
           </div>
         </div>
         <div className="section container content">
