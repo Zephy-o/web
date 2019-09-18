@@ -84,7 +84,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                     <i className="fad fa-user fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
-                    <h1>Community</h1>
+                    <h2>Community</h2>
                     <p>
                       Show off and customize your <b>profile</b> with our
                       extensive background collection. Unleash your inner
@@ -102,7 +102,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                     <i className="fad fa-cog fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
-                    <h1>Complete server control</h1>
+                    <h2>Complete server control</h2>
                     <p>
                       Miki does not play around when it comes to providing
                       utility for your server. Server owners can incentivize
@@ -123,7 +123,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                     <i className="fad fa-sparkles fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
-                    <h1>Uncover Miki's potential!</h1>
+                    <h2>Uncover Miki's potential!</h2>
                     <p>
                       Whenever you send messages, you will receive{" "}
                       <b>experience points</b> and climb the <b>leaderboards</b>
@@ -142,7 +142,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                     <i className="fad fa-chart-line fa-3x has-text-primary"></i>
                   </div>
                   <div className="column">
-                    <h1>Always improving!</h1>
+                    <h2>Always improving!</h2>
                     <p>
                       Our diverse community is helping us translate Miki into
                       many languages. On top of that, with rapid development,{" "}

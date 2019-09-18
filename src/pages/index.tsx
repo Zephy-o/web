@@ -4,6 +4,7 @@ import Home from "./home"
 import Donate from "./donate"
 import About from "./about"
 import Commands from "./commands"
+import Invite from "./invite"
 
 export default class Root extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export default class Root extends React.Component {
         <Donate path="/donate"></Donate>
         <About path="/about"></About>
         <Commands path="/commands"></Commands>
+        <Invite path="/invite"/>
       </Router>
     )
   }
