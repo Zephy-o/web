@@ -121,7 +121,7 @@ export default class Commands extends React.Component<RouteComponentProps> {
               {CommandData.map((value: any) => {
                 return value.commands.map((cmdValue, cmdKey) => {
                   return (
-                    <article key={cmdKey} className="card" data={cmdValue.name}>
+                    <article key={cmdKey} className="card" data={cmdValue.name} id={cmdValue.name}>
                       <div className="card-content">
                         <div className="columns">
                           <div className="column is-narrow">
