@@ -1,10 +1,7 @@
 import * as React from "react"
-import TestimonialComponent from "../components/testimonial"
 import { RouteComponentProps } from "@reach/router"
-import NewsReel from "../components/newsreel"
 import { FooterComponent } from "../components/footer"
 import { Helmet } from "react-helmet";
-import { Button, Size, Type} from "../components/base/button"
 import Navbar from "../components/navbar"
 
 export default class Home extends React.Component<RouteComponentProps> {
