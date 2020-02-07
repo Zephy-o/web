@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "@reach/router";
+import { Container } from "@veld/components";
 
 export interface NavbarProps {
     className: string;
@@ -51,7 +52,7 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
     renderNavbar() {
         return (
             <div className={`navbar ${this.getNavbarClass()}`} id="global-nav-bar">
-                <div className="container">
+                <Container>
                     <div className="navbar-brand">
                         <a className="navbar-item" href="/">
                             <p className="seperated">MIKI</p>
@@ -72,10 +73,11 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
                             <NavbarItem href="/commands" value="Commands" />
                             <NavbarItem href="/about" value="About" />
                             <NavbarItem href="/donate" value="Donate" />
+                            <NavbarItem href="/guides" value="Guides" />
                             <NavbarItem href="https://blog.miki.ai/" value="Blog" />
                         </div>
                     </div>
-                </div>
+                </Container>
             </div>
         )
     }
@@ -84,19 +86,33 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
 interface NavbarItemProps {
     href: string;
     value: string;
+    icon: string;
 }
 
-class NavbarItem extends React.Component<NavbarItemProps> {
+class NavbarItem extends React.Component<Partial<NavbarItemProps>> {
     render() {
         if(this.props.href.startsWith("http"))
         {
             return <a href={this.props.href} className="navbar-item" >
+                {this.renderIcon()}
                 <p>{this.props.value}</p>
             </a>
         } else {
             return <Link to={this.props.href} className="navbar-item" >
+                {this.renderIcon()}
                 <p>{this.props.value}</p>
             </Link>
         }
+    }
+
+    renderIcon() {
+        if(this.props.icon != null) {
+            return (
+                <span className="icon">
+                    <i className="fa"/>
+                </span>
+            )
+        }
+        return <React.Fragment/>;
     }
 }

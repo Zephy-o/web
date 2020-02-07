@@ -1,9 +1,4 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
+// eslint-disable-next-line no-undef
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -30,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        // eslint-disable-next-line no-undef
         trackingId: process.env.GOOGLE_TRACKING_ID,
       },
     },

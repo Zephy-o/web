@@ -2,7 +2,7 @@ import * as React from "react"
 import { RouteComponentProps } from "@reach/router"
 import { FooterComponent } from "../components/footer"
 import { Helmet } from "react-helmet";
-import { Button, Type} from "../components/base/button"
+import { Button, Color } from "@veld/components"
 import Navbar from "../components/navbar"
 
 const INVITE_URL = "https://discordapp.com/oauth2/authorize?&client_id=160185389313818624&scope=bot&permissions=355593334";
@@ -41,7 +41,7 @@ export default class Invite extends React.Component<RouteComponentProps> {
                     <div className="control">
                       <Button
                         href={INVITE_URL}
-                        type={Type.DANGER}
+                        type={Color.DANGER}
                         value="Did it not work?"
                         isOutlined
                       />

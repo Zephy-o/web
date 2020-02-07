@@ -2,25 +2,17 @@ import * as React from "react"
 import { RouteComponentProps } from "@reach/router"
 import NavbarComponent from "../components/navbar"
 import { FooterComponent } from "../components/footer"
-import { Button, Size } from "../components/base/button"
+import { Container, Button, Size, Color } from "@veld/components"
 import donate1 from "../img/donate/donate_1.png"
 import donate2 from "../img/donate/donate_2.png"
 import donate3 from "../img/donate/donate_3.png"
-import Helmet from "react-helmet"
+import { Head } from "../components/head";
 
 export default class Donate extends React.Component<RouteComponentProps> {
   render() {
     return (
       <div>
-        <Helmet>
-          <title>Miki - The Discord bot!</title>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
-          <meta name="description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="Miki - The Discord Bot" />
-          <meta property="og:description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
-        </Helmet>
+        <Head/>
         <NavbarComponent />
         <div className="section hero is-medium is-textured">
           <div className="container content">
@@ -92,10 +84,11 @@ export default class Donate extends React.Component<RouteComponentProps> {
           </div>
 
           <div className="section has-text-centered">
-            <Button isRounded 
+            <Button 
               href="https://www.patreon.com/bePatron?u=2542689" 
               value="Become a patron"
               size={Size.LARGE}
+              color={Color.PRIMARY}
               icon="fad fa-money-bill-wave"
             />
           </div>
@@ -109,7 +102,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
         </div>
 
         <div className="content">
-          <div className="container">
+          <Container>
             <p>
               Not a fan of commitment? No worries, we also support one-time
               donations with Ko-fi! You get instant rewards if you pass your
@@ -132,13 +125,14 @@ export default class Donate extends React.Component<RouteComponentProps> {
                 </p>
               </div>
             </div>
-          </div>
+          </Container>
 
           <div className="section has-text-centered">
-            <Button isRounded 
+            <Button 
               href="https://ko-fi.com/velddy" 
               value="Buy me a coffee"
               size={Size.LARGE}
+              color={Color.PRIMARY}
               icon="fad fa-coffee"
             />
           </div>

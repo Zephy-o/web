@@ -3,8 +3,8 @@ import TestimonialComponent from "../components/testimonial"
 import { RouteComponentProps } from "@reach/router"
 import NewsReel from "../components/newsreel"
 import { FooterComponent } from "../components/footer"
-import { Helmet } from "react-helmet";
-import { Button, Size, Type} from "../components/base/button"
+import { Head } from "../components/head";
+import { Button, Size, Color} from "@veld/components"
 import NavbarLanding from "../components/navbarLanding"
 
 const landingImageStyle = {
@@ -15,16 +15,7 @@ export default class Home extends React.Component<RouteComponentProps> {
   render() {
     return (
       <div>
-        <Helmet>
-        <title>Miki - The Discord bot!</title>
-          <meta charSet="UTF-8" />
-          <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
-          <meta name="description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="Miki - The Discord Bot" />
-          <meta property="og:description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
-        </Helmet>
-
+        <Head/>
         <NavbarLanding className="navbar is-smoother is-fixed-top"/>
         <div>
           <div className="section hero is-middle is-textured first">
@@ -32,7 +23,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               <div className="columns is-vcentered">
                 <div className="column is-5 content">
                   <h1 className="title has-text-white is-spaced">
-                    Miki for DISCORD
+                    Miki for Discord
                   </h1>
                   <p className="subtitle has-text-white">
                     Your solution to a great Discord Community!
@@ -42,7 +33,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                       <Button 
                         href="/invite?ref=miki_ai" 
                         size={Size.LARGE} 
-                        type={Type.INFO} 
+                        color={Color.INFO} 
                         value="Invite"
                         icon="fab fa-discord"
                       />
@@ -51,7 +42,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                       <Button
                         href="https://discord.gg/39Xpj7K"
                         size={Size.LARGE}
-                        type={Type.WHITE}
+                        color={Color.WHITE}
                         value="Support"
                         isOutlined
                       />
@@ -193,14 +184,14 @@ export default class Home extends React.Component<RouteComponentProps> {
                 <Button className="seperated"
                     href="/invite?ref=miki_ai" 
                     size={Size.LARGE} 
-                    type={Type.INFO} 
+                    color={Color.INFO} 
                     value="Invite Miki!"
                     icon="fab fa-discord"
                   />
                   <Button className="seperated"
                     href="/commands"
                     size={Size.LARGE}
-                    type={Type.WHITE}
+                    color={Color.WHITE}
                     value="Show commands!"
                     isOutlined
                   />
@@ -222,9 +213,3 @@ export default class Home extends React.Component<RouteComponentProps> {
     )
   }
 }
-/* TODO
-	script(type="text/javascript" src="https://blog.miki.ai/public/ghost-sdk.min.js")
-	
-	script
-		include ../js/home.ts
-*/

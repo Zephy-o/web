@@ -1,97 +1,64 @@
 import * as React from "react";
+import { Container } from "@veld/components";
 
 export class FooterComponent extends React.Component {
     render() {
-        return <footer className="footer has-background-white-ter">
-            <div className="container">
-                <div className="columns is-mobile">
-                    <div className="column">
-                        <b>Miki</b>
-                        <ul>
-                            <li>
-                                <a href="https://blog.miki.ai/">
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
+        return (
+            <footer className="footer">
+                <Container>
+                    <div className="content columns is-mobile">
+                        <div className="column is-4">
+                            <p className="footer-header">More of us!</p>
+                            <p className="footer-item">
                                 <a href="https://suggestions.miki.ai/">
-                                    Feedback
+                                    Give feedback
                                 </a>
-                            </li>
-                            <li>
+                            </p>
+                            <p className="footer-item">
                                 <a href="https://github.com/velddev/Miki/wiki/">
-                                    Wiki
+                                    Learn more about Miki
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="column">
-                        <b>Legal</b>
-                        <ul>
-                            <li>
-                                <a href="/legal">
-                                    Service Agreement
+                            </p>
+                            <p className="footer-item">
+                                <a href="https://blog.miki.ai/">
+                                    Visit our Blog
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="column">
-                        <b>Contact</b>
-                        <ul>
-                            <li>
-                                <a href="mailto:hello@miki.ai">
-                                    Email
+                            </p>
+                        </div>
+                        <div className="column is-3">
+                            <p className="footer-header">Stay up to date!</p>
+                            <p className="footer-item">
+                                <a href="http://discord.gg/miki">
+                                    Discord
                                 </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="https://twitter.com/miki_discord">
-                                    Twitter
+                            </p>
+                            <p className="footer-item">
+                                <a href="http://patreon.com/mikibot">
+                                    Patreon
                                 </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
+                            </p>
+                            <p className="footer-item">
                                 <a href="https://github.com/mikibot">
                                     GitHub
                                 </a>
-                            </li>
-                        </ul>
+                            </p>
+                        </div>
+                        <div className="column is-4">
+                            <p className="footer-header">Contact</p>
+                            <p className="footer-item">
+                                <a href="mailto:hello@miki.ai">
+                                    Email
+                                </a>
+                            </p>
+                            <p className="footer-item">
+                                <a href="http://twitter.com/velddev">
+                                    Twitter
+                                </a>
+                            </p>
+                        </div>
                     </div>
-                    <div className="column">
-                        <b>More</b>
-                        <ul>
-                            <li>
-                                <a href="/invite?ref=miki_ai">
-                                    Invite
-                                </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="https://github.com/mikibot/bot/issues">
-                                    Bugs
-                                </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="https://patreon.com/mikibot">
-                                    Patreon
-                                </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="https://discord.gg/39Xpj7K">
-                                    Support Server
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                </Container>
             </footer>
+        );
     }
 }

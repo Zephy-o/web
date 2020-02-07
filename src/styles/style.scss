@@ -3,11 +3,12 @@
 @import "bulma/bulma.sass";
 @import "bulma/bulma-tooltip.sass";
 @import "bulma/bulma-divider.sass";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 
 $modal-background-background-color: rgba(#ffffff, 0.1);
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .is-inline-block {
@@ -56,6 +57,23 @@ a.about-link {
 
   &.is-light {
     fill: white;
+  }
+}
+
+.footer-header {
+  font-weight: bold;
+  color: $primary;
+  padding-bottom: 1.5rem;
+}
+
+.footer-item {
+  color: $dark;
+
+  a {
+    color: $dark;
+  }
+  a:hover {
+    color: $grey;
   }
 }
 
@@ -204,10 +222,6 @@ a.about-link {
 
 .content-wrapper {
 	padding: 60px 0;
-}
-
-.footer {
-	padding: 3rem 1.5rem 1.5rem;
 }
 
 .hovered {
