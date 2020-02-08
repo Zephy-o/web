@@ -4,6 +4,7 @@ import NavbarComponent from "../../components/navbar"
 import { FooterComponent } from "../../components/footer"
 import { Head } from "../../components/head";
 import { Container, Button, Size, Color, Table, TableRow, TableHead, TableHeading, TableBody, TableCell } from "@veld/components"
+import { AuthorCard } from "../../components/cards/author-card";
 
 export default class TestPageDoNotEnter extends React.Component<RouteComponentProps> {
   render() {
@@ -53,6 +54,17 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
                             </TableRow>
                         </TableBody>
                     </Table>
+                </div>
+
+                <div className="is-flex">
+                    <AuthorCard
+                        name="Zephy"
+                        title="Writer"
+                        avatarUrl="https://miki-cdn.nyc3.digitaloceanspaces.com/avatars/355969214806360076.png"/>
+                    <AuthorCard
+                        name="Veld"
+                        title="Editor"
+                        avatarUrl="https://miki-cdn.nyc3.digitaloceanspaces.com/avatars/121919449996460033.png"/>
                 </div>
             </section>
         </Container>
