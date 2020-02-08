@@ -1441,10 +1441,10 @@
     lodash.unescape "4.0.1"
     semver "^6.3.0"
 
-"@veld/components@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@veld/components/-/components-0.1.9.tgz#30442add37bf70fa6c2644615cf087e4ed24c0e8"
-  integrity sha512-yTLGuLHo3Xl82rost71aivNB8M2epkfb9CWEBjlmo0xo5c7s6VIkbEFYm/pxQe9M4tEUcOf/Doyg4P4fKdXgJA==
+"@veld/components@^0.1.14":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@veld/components/-/components-0.1.14.tgz#d57450266002bdecf8955bafbb25f28cf205edd4"
+  integrity sha512-oE+rkw1uiP51Cf9bO9MmvjCLTE0TpOVNVbrSiz8O4xpsbih9ol+pZnIfRvveQiP/LXoE9bb23os/rQa0oslxLQ==
   dependencies:
     "@types/react" "^16.9.19"
     react "^16.10.2"

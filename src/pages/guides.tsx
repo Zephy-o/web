@@ -4,7 +4,7 @@ import NavbarComponent from "../components/navbar"
 import { FooterComponent } from "../components/footer"
 import { Head } from "../components/head";
 import { Container, Button, Size, Color } from "@veld/components"
-import { GuideCard } from "../components/guide-card";
+import { GuideCard } from "../components/cards/guide-card";
 
 export default class Donate extends React.Component<RouteComponentProps> {
   render() {
@@ -34,6 +34,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
                                 "Zephy#0001", "Veld#0001"
                             ]}
                             image="https://bulma.io/images/placeholders/1280x960.png"
+                            href="/guides/page1"
                             new
                             />
                     </div>

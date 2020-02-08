@@ -3,9 +3,27 @@ import * as React from 'react';
 export class GuideCard extends React.Component<Partial<GuideCardProps>> {
     constructor(props: GuideCardProps) {
         super(props);
+
+        this.renderAsURL = this.renderAsURL.bind(this);
+        this.renderBase = this.renderBase.bind(this);
     }
     
     render() {
+        if(this.props.href != undefined) {
+            return this.renderAsURL();
+        }
+        return this.renderBase();
+    }
+
+    renderAsURL() {
+        return (
+            <a href={this.props.href}>
+                {this.renderBase()}
+            </a>
+        )
+    }
+
+    renderBase() {
         return (
             <div className="card">
                 <div className="card-image">
@@ -24,8 +42,9 @@ export class GuideCard extends React.Component<Partial<GuideCardProps>> {
 }
 
 interface GuideCardProps {
-    title: string,
-    authors: string[],
-    image: string
-    new: bool
+    title: string;
+    authors: string[];
+    image: string;
+    new: bool;
+    href?: string;
 }
