@@ -45,6 +45,6 @@ interface GuideCardProps {
     title: string;
     authors: string[];
     image: string;
-    new: bool;
+    new: boolean;
     href?: string;
 }

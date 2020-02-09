@@ -11,9 +11,9 @@ export default class Root extends React.Component {
     return (
       <Router>
         <Home path="/" />
-        <Donate path="/donate"></Donate>
-        <About path="/about"></About>
-        <Commands path="/commands"></Commands>
+        <Donate path="/donate"/>
+        <About path="/about"/>
+        <Commands path="/commands"/>
         <Invite path="/invite"/>
       </Router>
     )

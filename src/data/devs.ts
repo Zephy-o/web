@@ -18,11 +18,5 @@ export default [
     desc: "Backend Engineer",
     uid: "160256824099078144",
     github: "https://github.com/exsersewo"
-  },
-  {
-    name: "Fuzen",
-    desc: "Infrastructure Engineer",
-    uid: "134090963395149824",
-    github: "https://github.com/fuzen-py"
   }
 ];

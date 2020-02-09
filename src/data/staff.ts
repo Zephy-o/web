@@ -5,11 +5,6 @@ export default [
     uid: "102405515060994048",
   },
   {
-    name: "IA",
-    desc: "Server Admin",
-    uid: "147447799573774336",
-  },
-  {
     name: "Tal",
     desc: "Server Mod",
     uid: "166157397738520578",

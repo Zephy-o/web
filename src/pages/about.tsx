@@ -5,8 +5,9 @@ import { FooterComponent } from "../components/footer"
 import devs from "../data/devs"
 import discordStaff from "../data/staff"
 import contributers from "../data/contributers"
-import { AlumniCard } from "../components/cards/alumniCard"
+import { AlumniCard } from "../components/cards/alumni-card"
 import { Head } from "../components/head"
+import { StaffCard } from "../components/cards/staff-card"
 
 export default class About extends React.Component<RouteComponentProps> {
   render() {
@@ -33,21 +34,7 @@ export default class About extends React.Component<RouteComponentProps> {
             <div className="section columns is-multiline is-flex is-flex-centered">
               {devs.map((value, key) => {
                 return (
-                  <div key={key} className="card column seperated">
-                    <div className="card-content has-text-centere">
-                      <figure
-                        className="image is-128x128"
-                        style={{ margin: "auto" }}
-                      >
-                        <img
-                          className="is-rounded"
-                          src={`https://miki-cdn.nyc3.digitaloceanspaces.com/avatars/${value.uid}.png`}
-                        />
-                      </figure>
-                    </div>
-                    <div className="card-content.has-text-centered">
-                      <h2>{value.name}</h2>
-                      <p>{value.desc}</p>
+                  <StaffCard isRounded key={key} name={value.name} title={value.desc} userId={value.uid}>
                       <div className="columns has-text-centered is-mobile">
                         {value.github ? (
                           <div className="column">
@@ -101,8 +88,7 @@ export default class About extends React.Component<RouteComponentProps> {
                             undefined
                           )}
                       </div>
-                    </div>
-                  </div>
+                  </StaffCard>
                 )
               })}
             </div>
@@ -112,27 +98,9 @@ export default class About extends React.Component<RouteComponentProps> {
             <h2>Server Moderators</h2>
             <p>Keeping the support server clean!</p>
             <div className="section columns is-multiline is-flex is-flex-centered">
-              {discordStaff.map((value, key) => {
-                return (
-                  <div key={key} className="card column seperated">
-                    <div className="card-content has-text-centere">
-                      <figure
-                        className="image is-128x128"
-                        style={{ margin: "auto" }}
-                      >
-                        <img
-                          className="is-rounded"
-                          src={`https://miki-cdn.nyc3.digitaloceanspaces.com/avatars/${value.uid}.png`}
-                        />
-                      </figure>
-                    </div>
-                    <div className="card-content.has-text-centered">
-                      <h2>{value.name}</h2>
-                      <p>{value.desc}</p>
-                    </div>
-                  </div>
-                )
-              })}
+              {discordStaff.map((value, key) => 
+                <StaffCard isRounded key={key} name={value.name} title={value.desc} userId={value.uid}/> 
+              )}
             </div>
           </section>
 

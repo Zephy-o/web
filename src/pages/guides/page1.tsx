@@ -5,6 +5,7 @@ import { FooterComponent } from "../../components/footer"
 import { Head } from "../../components/head";
 import { Container, Button, Size, Color, Table, TableRow, TableHead, TableHeading, TableBody, TableCell } from "@veld/components"
 import { AuthorCard } from "../../components/cards/author-card";
+import { CodeBlock } from "../../components/code-block";
 
 export default class TestPageDoNotEnter extends React.Component<RouteComponentProps> {
   render() {
@@ -54,6 +55,10 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
                             </TableRow>
                         </TableBody>
                     </Table>
+
+                    <CodeBlock
+                        value={`someCode():
+    to test out if this works();`}/>
                 </div>
 
                 <div className="is-flex">

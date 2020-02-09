@@ -7,6 +7,7 @@ import donate1 from "../img/donate/donate_1.png"
 import donate2 from "../img/donate/donate_2.png"
 import donate3 from "../img/donate/donate_3.png"
 import { Head } from "../components/head";
+import { Icon, IconType } from "../components/icon"
 
 export default class Donate extends React.Component<RouteComponentProps> {
   render() {
@@ -27,7 +28,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
         <div className="content is-large is-vcentered has-background-primary">
           <div className="container">
             <h3 className="has-text-white is-padded is-marginless">
-              <i className="fab fa-patreon seperated"></i>
+              <Icon name="patreon" type={IconType.BRANDS}/>
               Patreon
             </h3>
           </div>
