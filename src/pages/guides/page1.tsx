@@ -3,9 +3,8 @@ import { RouteComponentProps } from "@reach/router"
 import NavbarComponent from "../../components/navbar"
 import { FooterComponent } from "../../components/footer"
 import { Head } from "../../components/head";
-import { Container, Button, Size, Color, Table, TableRow, TableHead, TableHeading, TableBody, TableCell } from "@veld/components"
+import { Button, Size, Color, Table, TableRow, TableHead, TableHeading, TableBody, TableCell, Container, CopyableCodeBlock } from "@veld/components"
 import { AuthorCard } from "../../components/cards/author-card";
-import { CodeBlock } from "../../components/code-block";
 
 export default class TestPageDoNotEnter extends React.Component<RouteComponentProps> {
   render() {
@@ -56,9 +55,11 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
                         </TableBody>
                     </Table>
 
-                    <CodeBlock
-                        value={`someCode():
-    to test out if this works();`}/>
+                    <CopyableCodeBlock value={`import 'thisLib';
+
+func toJSON(value: IJsonable): string {
+    return thisLib.serialize(value, 'json');
+}`} />
                 </div>
 
                 <div className="is-flex">

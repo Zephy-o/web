@@ -29,5 +29,12 @@ module.exports = {
         trackingId: process.env.GOOGLE_TRACKING_ID,
       },
     },
+    {
+      resolve: `gatsby-plugin-styletron`,
+      options: {
+        // Disable dev debug mode, enabled by default
+        debug: false,
+      },
+    },
   ]
 }
