@@ -139,13 +139,13 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
                     <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-10.png"/>
                     <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-11.png"/>
                     <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-12.png"/>
-                    <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-13.png"/>
                     <h2>Permissions</h2>
 
                     <h3>What are permissions?</h3>
                     <p>Permissions are used within a discord server to give members or bots access to certain features. permissions are given to people through roles, each role can have a different set of permissions, however if a user has multiple roles their permissions will be inherited from their highest role.</p>
 
                     <p>Miki needs the "Manage Roles" permission in order to access the Discord servers roles. You can give Miki access to this permission by navigating to Miki’s role in server settings and enabling 'Manage Roles'.</p>
+                    <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-13.png"/>
 
                     <p>The 'Manage Roles' permission will only give Miki authority to manage roles underneath her role in the role hierarchy, therefore any roles you intend to configure will need to be below her role, you can drag roles up or down the hierarchy to change their position.</p>
 
