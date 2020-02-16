@@ -33,7 +33,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
                             authors={[
                                 "Zephy#0001", "Veld#0001"
                             ]}
-                            image="https://bulma.io/images/placeholders/1280x960.png"
+                            image="https://cdn.miki.ai/web/landing/guides/title-roles-thing.png"
                             href="/guides/using-miki-role-configuration"
                             new
                             />

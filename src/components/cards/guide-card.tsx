@@ -27,8 +27,8 @@ export class GuideCard extends React.Component<Partial<GuideCardProps>> {
         return (
             <div className="card">
                 <div className="card-image">
-                    <figure className="image is-4by3">
-                        <img src={this.props.image} alt={this.props.title}/>>
+                    <figure className="image">
+                        <img src={this.props.image} alt={this.props.title}/>
                     </figure>
                 </div>
                 <div className="card-content">
