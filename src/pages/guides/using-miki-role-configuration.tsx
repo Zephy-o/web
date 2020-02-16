@@ -234,7 +234,7 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
                     <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-8.png"/>
 
                     <h3>Twitch subscriber roles</h3>
-                    <p>If you’re a creator on Twitch, Patreon, etc. Miki can allow your supporters to have special roles. This can be super convenient, because on occasion you might want to have users have extra rewards on your server, but still have then pick between different ones.</p>
+                    <p>If you’re a creator on Twitch, Patreon, etc. Miki can allow your supporters to have special roles. This can be super convenient, because on occasion you might want to have users have extra rewards on your server, but still have them pick between different ones.</p>
                     <p>For example, you can have default colours which your Discord members can freely choose, and then for supporters; you can have prettier, hand-picked colours, to let them brag in the chat.</p>
 
                     <p>There’s two different arguments you need: <b>Optable</b> and <b>Role-Required</b>.</p>
