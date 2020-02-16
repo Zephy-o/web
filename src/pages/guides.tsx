@@ -34,7 +34,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
                                 "Zephy#0001", "Veld#0001"
                             ]}
                             image="https://bulma.io/images/placeholders/1280x960.png"
-                            href="/guides/page1"
+                            href="/guides/using-miki-role-configuration"
                             new
                             />
                     </div>
