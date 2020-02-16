@@ -14,11 +14,8 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
         <Head/>
         <NavbarComponent />
         <Container>
-            <section className="section">
                 <div className="content">
-                    <section className="section">
-                        <img src="https://cdn.miki.ai/web/landing/guides/title-roles-thing.png"/>
-                    </section>
+                    <img src="https://cdn.miki.ai/web/landing/guides/title-roles-thing.png"/>
                     <h1>Using Miki’s Role Management Commands In Your Server!</h1>
 
                     <p>So, looking to configure some roles in your server? Great! This guide will explain each command involved in configuring and obtaining roles using Miki, as well as go through some Discord features such as setting up permissions within your server. After reading this, you will have the necessary knowledge to set up a variety of different role configurations and know how to opt in or out of available roles. Before we start; make sure you already have Miki in your Discord server if you’d like to follow along and try things out for yourself!</p>
@@ -139,18 +136,10 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
 
                     <h2>Preparing your server</h2>
                     <p>Before a role can be configured, it needs to be created first. To create roles within your server you have to navigate to the role tab within the server settings, here you will be able to create new roles and edit any existing roles.</p>
-                    <section className="section">
-                        <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-10.png"/>
-                    </section>
-                    <section className="section">
-                        <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-11.png"/>
-                    </section>
-                    <section className="section">
-                        <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-12.png"/>
-                    </section>
-                    <section className="section">
-                        <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-13.png"/>
-                    </section>
+                    <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-10.png"/>
+                    <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-11.png"/>
+                    <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-12.png"/>
+                    <img className="image" src="https://cdn.miki.ai/web/landing/guides/using-role-config-13.png"/>
                     <h2>Permissions</h2>
 
                     <h3>What are permissions?</h3>
@@ -274,7 +263,6 @@ export default class TestPageDoNotEnter extends React.Component<RouteComponentPr
                         title="Editor"
                         avatarUrl="https://cdn.miki.ai/avatars/121919449996460033.png"/>
                 </div>
-            </section>
         </Container>
 
         <div className="section hero is-small is-dark">
