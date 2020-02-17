@@ -10,8 +10,6 @@ interface Props {
 }
 
 export class StaffCard extends React.Component<Props> {
-
-
     render() {
         return (
             <div className="card is-flex column" style={{

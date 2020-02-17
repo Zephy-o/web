@@ -6,7 +6,7 @@ import { Head } from "../components/head";
 import { Container, Button, Size, Color } from "@veld/components"
 import { GuideCard } from "../components/cards/guide-card";
 
-export default class Donate extends React.Component<RouteComponentProps> {
+export default class Guides extends React.Component<RouteComponentProps> {
   render() {
     return (
       <div>
@@ -28,21 +28,42 @@ export default class Donate extends React.Component<RouteComponentProps> {
             <div className="section">
                 <div className="columns">
                     <div className="column">
-                        <GuideCard
-                            title="Using Miki's Role Management commands!"
-                            authors={[
-                                "Zephy#0001", "Veld#0001"
-                            ]}
-                            image="https://cdn.miki.ai/web/landing/guides/title-roles-thing.png"
-                            href="/guides/using-miki-role-configuration"
-                            new
-                            />
+                        {GuidesData.map((x, index) => {
+                            if(index % 3 == 0) {
+                                return <GuideCard
+                                    title={x.title}
+                                    authors={x.authors.map(y => y.name)}
+                                    image={x.thumbnailUrl}
+                                    href={x.href}
+                                    />
+                            }
+                        })}
                     </div>
 
                     <div className="column">
+                        {GuidesData.map((x, index) => {
+                                if(index % 3 == 1) {
+                                    return <GuideCard
+                                        title={x.title}
+                                        authors={x.authors.map(y => y.name)}
+                                        image={x.thumbnailUrl}
+                                        href={x.href}
+                                        />
+                                }
+                            })}
                     </div>
 
                     <div className="column">
+                        {GuidesData.map((x, index) => {
+                                if(index % 3 == 2) {
+                                    return <GuideCard
+                                        title={x.title}
+                                        authors={x.authors.map(y => y.name)}
+                                        image={x.thumbnailUrl}
+                                        href={x.href}
+                                        />
+                                }
+                            })}
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ export class AuthorCard extends React.Component<AuthorCardProps> {
         return (
             <div className="is-flex" style={{
                 alignItems: "center",
-                padding: "1rem"
+                padding: "0.5rem"
             }}>
                 <figure className="image is-48x48">
                     <img className="is-rounded" src={this.props.avatarUrl}/>
@@ -25,7 +25,7 @@ export class AuthorCard extends React.Component<AuthorCardProps> {
                     padding: "1rem"
                 }}>
                     <p><b>{this.props.name}</b></p>
-                    <p>{this.props.title}</p>
+                    <p className="has-text-grey-light">{this.props.title}</p>
                 </div>
             </div>
         )

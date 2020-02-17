@@ -8,7 +8,7 @@ export default class NotFound extends React.Component<RouteComponentProps> {
     render() {
         return <div>
         <Helmet>
-          <title>Miki - The Discord bot!</title>
+          <title>Miki - Page Not Found!</title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=no" />
           <meta name="description" content="Miki, a bot for Discord with the view to make chatting more appealing through gamification and utility!" />
