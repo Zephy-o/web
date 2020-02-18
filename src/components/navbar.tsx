@@ -44,7 +44,9 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
 
     render() {
         return <React.Fragment>
-            <div className="navbar-space"></div>
+            <div style={{
+                marginBottom: "50px"
+            }}></div>
                 {this.renderNavbar()}
         </React.Fragment>
     }
@@ -55,18 +57,17 @@ export default class Navbar<Props extends NavbarProps, State extends NavbarState
                 <Container>
                     <div className="navbar-brand">
                         <a className="navbar-item" href="/">
-                            <p className="seperated">MIKI</p>
+                            <h1>MIKI</h1>
                         </a>
-                        <a className={this.getActive("navbar-burger has-text-centered")} 
+                        <button className={"burger-button" + " " + this.getActive("navbar-burger has-text-centered")} 
                                 data-target="global-nav-menu" 
                                 aria-label="menu" 
-                                role="button" 
                                 aria-expanded="false" 
                                 onClick={this.toggle}>
                             <span></span>
                             <span></span>
                             <span></span>
-                        </a>
+                        </button>
                     </div>
                     <div className={this.getActive("navbar-menu")}>
                         <div className="navbar-end">

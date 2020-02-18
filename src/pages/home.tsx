@@ -6,6 +6,7 @@ import { FooterComponent } from "../components/footer"
 import { Head } from "../components/head";
 import { Button, Size, Color} from "@veld/components"
 import NavbarLanding from "../components/navbarLanding"
+import { Wave } from "../components/wave"
 
 const landingImageStyle = {
   borderRadius: "15px",
@@ -18,47 +19,56 @@ export default class Home extends React.Component<RouteComponentProps> {
         <Head/>
         <NavbarLanding className="navbar is-smoother is-fixed-top"/>
         <div>
-          <div className="section hero is-middle is-textured first">
-            <div className="container hero-body">
-              <div className="columns is-vcentered">
-                <div className="column is-5 content">
-                  <h1 className="title has-text-white is-spaced">
-                    Miki for Discord
-                  </h1>
-                  <p className="subtitle has-text-white">
-                    Your solution to a great Discord Community!
-                  </p>
-                  <div className="field is-grouped">
-                    <div className="control">
-                      <Button 
-                        href="/invite?ref=miki_ai" 
-                        size={Size.LARGE} 
-                        color={Color.INFO} 
-                        value="Invite"
-                        icon="fab fa-discord"
-                      />
-                    </div>
-                    <div className="control">
-                      <Button
-                        href="https://discord.gg/39Xpj7K"
-                        size={Size.LARGE}
-                        color={Color.WHITE}
-                        value="Support"
-                        isOutlined
-                      />
-                    </div>
+          <div className="is-textured" style={{
+              paddingTop: "3rem"
+            }}>
+            <div className="hero is-mediumfirst is-large-mobile">
+              <div className="container hero-body">
+                <div className="columns is-vcentered">
+                  <div className="column is-5 content">
+                    <h1 className="title has-text-white is-spaced">
+                      Miki for Discord
+                    </h1>
+                    <p className="subtitle has-text-white">
+                      Your solution to a great Discord Community!
+                    </p>
+                      <div className="is-flex flex-row-mobile">
+                        <div style={{
+                          margin: "0.5rem"
+                        }}>
+                          <Button 
+                            href="/invite?ref=miki_ai" 
+                            size={Size.LARGE} 
+                            color={Color.INFO} 
+                            value="Invite"
+                            icon="fab fa-discord"
+                          />
+                        </div>
+                        <div style={{
+                          margin: "0.5rem"
+                        }}>
+                          <Button
+                            href="https://discord.gg/39Xpj7K"
+                            size={Size.LARGE}
+                            color={Color.WHITE}
+                            value="Support"
+                            isOutlined
+                          />
+                        </div>
+                      </div>
                   </div>
-                </div>
-                <div className="column is-offset-2 is-10 is-hidden-touch is-hidden-desktop-only image">
-                  <img
-                    className="has-shadow is-smooth"
-                    src="https://cdn.miki.ai/web/landing/landing-image.png"
-                    style={landingImageStyle}
-                    id="landing-img"
-                  />
+                  <div className="column is-offset-2 is-10 is-hidden-touch is-hidden-desktop-only image">
+                    <img
+                      className="has-shadow is-smooth"
+                      src="https://cdn.miki.ai/web/landing/landing-image.png"
+                      style={landingImageStyle}
+                      id="landing-img"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
+            <Wave fill="white"/>
           </div>
           <div className="section has-background-lighter container">
             <div className="has-text-centered">
@@ -178,24 +188,27 @@ export default class Home extends React.Component<RouteComponentProps> {
               />
             </div>
           </div>
-          <div className="section hero is-small has-text-centered has-background-primary is-textured">
-            <div className="hero-body">
-              <h2 className="has-text-white title">Get started with MIKI</h2>
-                <Button className="seperated"
-                    href="/invite?ref=miki_ai" 
-                    size={Size.LARGE} 
-                    color={Color.INFO} 
-                    value="Invite Miki!"
-                    icon="fab fa-discord"
-                  />
+          <div className="hero is-small has-text-centered is-textured is-dark">
+            <div className="section">
+              <div className="hero-body">
+                <h2 className="title">Get started with MIKI</h2>
                   <Button className="seperated"
-                    href="/commands"
-                    size={Size.LARGE}
-                    color={Color.WHITE}
-                    value="Show commands!"
-                    isOutlined
-                  />
+                      href="/invite?ref=miki_ai" 
+                      size={Size.LARGE} 
+                      color={Color.INFO} 
+                      value="Invite Miki!"
+                      icon="fab fa-discord"
+                    />
+                    <Button className="seperated"
+                      href="/commands"
+                      size={Size.LARGE}
+                      color={Color.WHITE}
+                      value="Show commands!"
+                      isOutlined
+                    />
+              </div>
             </div>
+            <Wave fill="white"/>
           </div>
           <div className="section content container">
             <h3 className="has-text-centered">Latest news!</h3>

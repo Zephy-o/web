@@ -1,6 +1,9 @@
 ---
 title: "Using Miki’s Role Management Commands In Your Server!"
 thumbnailUrl: "https://cdn.miki.ai/web/landing/guides/title-roles-thing.png"
+tags: [
+    "tutorial", "roles", "discord"
+]
 authors: [
     {
      name: "Zephy",

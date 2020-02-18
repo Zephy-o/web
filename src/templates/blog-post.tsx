@@ -32,7 +32,7 @@ export class BlogPost extends React.Component<Props> {
   }
 
   componentDidMount() {
-    this.location = window.location;
+    this.location = window.location.href;
   }
   
   render() {
@@ -42,7 +42,9 @@ export class BlogPost extends React.Component<Props> {
         <Navbar/>
         <Container>
             <br/>
-            <div className="content">
+            <div className="content" style={{
+              paddingTop: "1rem"
+            }}>
                 <h1>{this.props.title}</h1>
                 <p className="has-text-grey-light">{this.props.readingTimeMinutes} minute read</p>
             </div>

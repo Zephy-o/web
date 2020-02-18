@@ -26,15 +26,16 @@ export class GuideCard extends React.Component<Partial<GuideCardProps>> {
     renderBase() {
         return (
             <div className="card">
-                <div className="card-image">
-                    <figure className="image">
-                        <img src={this.props.image} alt={this.props.title}/>
-                    </figure>
-                </div>
-                <div className="card-content">
-                    <div className="seperated-h tag is-info">New!</div>
-                    <b>{this.props.title || "No title set?"}</b>
-                    <i><br/> By {this.props.authors.join(", ")}</i>
+                <div className="card-content content">
+                    <h4>{this.props.title || "No title set?"}</h4>
+                    <p>{this.props.excerpt}</p>
+                    {this.props.tags.map((x, index) => {
+                        return (<p key={index} className="tag" style={{marginRight: "0.5rem"}}>{x}</p>)
+                    })}
+                    <p><i className="fad fa-at has-text-primary" style={{
+                        marginRight: "0.5rem"
+                    }}/>
+                    {this.props.authors[0]} - {new Date(this.props.date).toDateString()}</p>
                 </div>
             </div>
         );
@@ -46,5 +47,8 @@ interface GuideCardProps {
     authors: string[];
     image: string;
     new: boolean;
+    date: string;
     href?: string;
+    tags: string[];
+    excerpt: string;
 }
