@@ -50,7 +50,7 @@ export class BlogPost extends React.Component<Props> {
                     <div className="level-item">
                         <TwitterShareButton
                             text={`Read this article about ${this.props.title} by ${this.props.authors[0].name.split("#")[0]}`}
-                            url={document.location.href}/>
+                            url={window != undefined ? window.document.location.href : ""}/>
                     </div>
                 </div>
             </div>
