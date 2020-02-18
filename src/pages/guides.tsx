@@ -57,7 +57,7 @@ export class Guides extends React.Component<Props> {
             <NavbarComponent />
             <div className="hero is-medium is-textured is-primary">
                 <div className="section">
-                    <div className="content">
+                    <div className="hero-body content">
                         <Container>
                             <h1 className="title">Help & Guides</h1>
                             <p className="subtitle">
