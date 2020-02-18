@@ -24,6 +24,17 @@ interface Props {
 }
 
 export class BlogPost extends React.Component<Props> {
+  location: string;
+  
+  constructor(props: Props) {
+    super(props);
+    this.location = "";
+  }
+
+  componentDidMount() {
+    this.location = window.location;
+  }
+  
   render() {
     return (
       <div>
@@ -50,7 +61,7 @@ export class BlogPost extends React.Component<Props> {
                     <div className="level-item">
                         <TwitterShareButton
                             text={`Read this article about ${this.props.title} by ${this.props.authors[0].name.split("#")[0]}`}
-                            url={window != undefined ? window.document.location.href : ""}/>
+                            url={this.location}/>
                     </div>
                 </div>
             </div>
