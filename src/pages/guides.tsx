@@ -5,8 +5,41 @@ import { FooterComponent } from "../components/footer"
 import { Head } from "../components/head";
 import { Container, Button, Size, Color } from "@veld/components"
 import { GuideCard } from "../components/cards/guide-card";
+import { graphql } from "gatsby"
 
-export default class Guides extends React.Component<RouteComponentProps> {
+export default ({ data }) => {
+    return (
+        <Guides data={data.allMarkdownRemark.edges.map(x => x.node)}/>
+    );
+}
+
+export const query = graphql`
+query {
+    allMarkdownRemark {
+    edges {
+        node {
+            id
+            frontmatter {
+                title
+                authors {
+                    name
+                    avatar
+                }
+                thumbnailUrl
+                date(formatString: "DD MMMM, YYYY")
+            }
+            excerpt
+        }
+    }
+    }
+}
+`
+
+interface Props extends RouteComponentProps {
+    data: any;
+}
+
+export class Guides extends React.Component<Props> {
   render() {
     return (
       <div>
@@ -28,12 +61,12 @@ export default class Guides extends React.Component<RouteComponentProps> {
             <div className="section">
                 <div className="columns">
                     <div className="column">
-                        {GuidesData.map((x, index) => {
+                        {this.props.data.map((x, index) => {
                             if(index % 3 == 0) {
                                 return <GuideCard
-                                    title={x.title}
-                                    authors={x.authors.map(y => y.name)}
-                                    image={x.thumbnailUrl}
+                                    title={x.frontmatter.title}
+                                    authors={x.frontmatter.authors.map(y => y.name)}
+                                    image={x.frontmatter.thumbnailUrl}
                                     href={x.href}
                                     />
                             }
@@ -41,27 +74,27 @@ export default class Guides extends React.Component<RouteComponentProps> {
                     </div>
 
                     <div className="column">
-                        {GuidesData.map((x, index) => {
+                        {this.props.data.map((x, index) => {
                                 if(index % 3 == 1) {
                                     return <GuideCard
-                                        title={x.title}
-                                        authors={x.authors.map(y => y.name)}
-                                        image={x.thumbnailUrl}
-                                        href={x.href}
-                                        />
+                                    title={x.frontmatter.title}
+                                    authors={x.frontmatter.authors.map(y => y.name)}
+                                    image={x.frontmatter.thumbnailUrl}
+                                    href={x.href}
+                                    />
                                 }
                             })}
                     </div>
 
                     <div className="column">
-                        {GuidesData.map((x, index) => {
+                        {this.props.data.map((x, index) => {
                                 if(index % 3 == 2) {
                                     return <GuideCard
-                                        title={x.title}
-                                        authors={x.authors.map(y => y.name)}
-                                        image={x.thumbnailUrl}
-                                        href={x.href}
-                                        />
+                                    title={x.frontmatter.title}
+                                    authors={x.frontmatter.authors.map(y => y.name)}
+                                    image={x.frontmatter.thumbnailUrl}
+                                    href={x.href}
+                                    />
                                 }
                             })}
                     </div>
