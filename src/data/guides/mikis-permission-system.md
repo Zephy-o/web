@@ -4,7 +4,7 @@ title: "Miki’s Permission System"
 thumbnailUrl: "https://cdn.miki.ai/web/landing/guides/miki-permissions.png"
 authors: [
     {
-     name: "advocatus",
+     name: "Advocatus",
     title: "Writer",
     avatar: "https://cdn.miki.ai/avatars/151506298741981184.png"
     },
