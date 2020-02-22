@@ -101,7 +101,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                   avatar="/user_2.png"
                 />
                 <DiscordMessage
-                  username="John"
+                  username="Miki"
                   isBot
                   time="Right now"
                   body='Guy has obtained the "Millionaire" achievement!'
