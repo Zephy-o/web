@@ -5,18 +5,18 @@ export default [
     uid: "121919449996460033",
     github: "https://github.com/velddev",
     twitter: "https://twitter.com/velddev",
-    twitch: "https://www.twitch.tv/velddev",
-  },
-  {
-    name: "Niputi",
-    desc: "Web backend Engineer",
-    uid: "162325985079984129",
-    github: "https://github.com/Niputi",
+    twitch: "https://www.twitch.tv/velddev"
   },
   {
     name: "exsersewo",
-    desc: "Backend Engineer",
+    desc: "Engineer",
     uid: "160256824099078144",
     github: "https://github.com/exsersewo"
+  },
+  {
+    name: "Drummss",
+    desc: "Engineer",
+    uid: "203948399668494336",
+    github: "https://github.com/drummss"
   }
 ];

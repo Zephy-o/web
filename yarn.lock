@@ -1356,29 +1356,6 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@^16.9.19":
-  version "16.9.19"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.19.tgz#c842aa83ea490007d29938146ff2e4d9e4360c40"
-  integrity sha512-LJV97//H+zqKWMms0kvxaKYJDG05U2TtQB3chRLF8MPNs+MQh/H1aGlyDUxjaHvu08EAGerdX2z4LTBc7ns77A==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
-
-"@types/styletron-react@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@types/styletron-react/-/styletron-react-5.0.2.tgz#541cebb147ef68e9a8ee75dcff160cf723fed710"
-  integrity sha512-jONPyzz9MRuCB71QYpkRQx4nsjGxLS/GNmudHXs8aeTj8yRHgO9wsXhUAL5uZ8LOENWUN2Gcqh/vNvlbRpfcUA==
-  dependencies:
-    "@types/react" "*"
-    "@types/styletron-standard" "*"
-
-"@types/styletron-standard@*", "@types/styletron-standard@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@types/styletron-standard/-/styletron-standard-2.0.0.tgz#fff4c89cb2cb1f6cc48699188fcea31a02191052"
-  integrity sha512-TCNFfgWmGLyuthLVl55Bvw6xjdflrtJ43+CIB+UfumLDRDFdANPB5fnMP/gahepI/QUaLI0nVuZYfNq/MTCjdQ==
-  dependencies:
-    csstype "^2.6.4"
-
 "@types/tmp@^0.0.32":
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
@@ -1489,14 +1466,11 @@
     lodash.unescape "4.0.1"
     semver "^6.3.0"
 
-"@veld/components@^0.1.23":
-  version "0.1.23"
-  resolved "https://registry.yarnpkg.com/@veld/components/-/components-0.1.23.tgz#ac4685bd004a142bb8a96c3447c52a1a75f970e0"
-  integrity sha512-etRVTyTYqsEwmZeoSb7xO2GnPTegQYms8gYwlCl7YsOF89zm9eIMfrCy56JLYI+4alcz4aCy2IthV1zrYluPPQ==
+"@veld/components@^0.1.26":
+  version "0.1.26"
+  resolved "https://registry.yarnpkg.com/@veld/components/-/components-0.1.26.tgz#d10cc9cf6b676417c9c4eb31b243d97d05ba69fe"
+  integrity sha512-LJR8KL0VOlVzPCN5mkL9Hcj7PQGUqxAUa3TevY+WecuhvUqSqs/CEt5s46dQAz8ckOIYg7U8n5z7U8EH2+LQGw==
   dependencies:
-    "@types/react" "^16.9.19"
-    "@types/styletron-react" "^5.0.2"
-    "@types/styletron-standard" "^2.0.0"
     copy-to-clipboard "^3.2.1"
     react "^16.10.2"
     styletron-engine-atomic "^1.4.5"
@@ -3821,7 +3795,7 @@ csstype@^2.2.0:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
   integrity sha512-RpFbQGUE74iyPgvr46U9t1xoQBM8T4BL8SxrN66Le2xYAPSaDJJKeztV3awugusb3g3G9iL8StmkBBXhcbbXhg==
 
-csstype@^2.5.7, csstype@^2.6.4:
+csstype@^2.5.7:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
   integrity sha512-msVS9qTuMT5zwAGCVm4mxfrZ18BNc6Csd0oJAtiFMZ1FAx1CCvy2+5MDmYoix63LM/6NDbNtodCiGYGmFgO0dA==
