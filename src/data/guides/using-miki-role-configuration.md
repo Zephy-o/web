@@ -6,7 +6,7 @@ tags: [
 ]
 authors: [
     {
-     name: "Zephy",
+    name: "Zephy",
     title: "Writer",
     avatar: "https://cdn.miki.ai/avatars/355969214806360076.png"
     },
