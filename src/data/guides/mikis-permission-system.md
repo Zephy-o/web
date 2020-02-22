@@ -1,9 +1,7 @@
 ---
 title: "Miki’s Permission System"
 thumbnailUrl: "https://cdn.miki.ai/web/landing/guides/miki-permissions.png"
-tags: [
-    "tutorial", "permissions", "customization", "config", "discord"
-]
+tags: ["tutorial", "permissions", "customization", "config", "discord"]
 authors:
   [
     {
@@ -17,7 +15,7 @@ authors:
       avatar: "https://cdn.miki.ai/avatars/121919449996460033.png",
     },
   ]
-date: "2020-02-12"
+date: "2020-02-23"
 ---
 
 The core of using Miki’s many features is giving her commands; with that comes permission to be able to use her commands. There are three types of things you can do with the permissions functionality: allow, deny and reset. There’s four levels of permissions that you can utilize: guild (server), channel, role and individual user.

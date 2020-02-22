@@ -16,36 +16,37 @@ authors: [
 	avatar: "https://cdn.miki.ai/avatars/121919449996460033.png"
 	}
 ]
-date: "1970-01-01"
+date: "2020-02-23"
 ---
-Miki is such a diverse bot and with diversity comes different languages. Localization, changing something to be more like your local area such as language,  allows the diverse users of Miki to enjoy her services in 26 languages! With the help of the community of users, this has been made possible. The languages available are: 
 
-*   Arabic
-*   Bulgarian
-*   Czech
-*   Danish
-*   Dutch
-*   English
-*   Finnish
-*   French
-*   German
-*   Hebrew
-*   Hindi
-*   Hungarian
-*   Italian
-*   Japanese
-*   Lithuanian
-*   Malaysian
-*   Norwegian
-*   Polish
-*   Portuguese
-*   Russian
-*   Estonian
-*   Swedish
-*   Tagalog
-*   Ukranian
-*   Chinese Simplified
-*   Chinese Traditional
+Miki is such a diverse bot and with diversity comes different languages. Localization, changing something to be more like your local area such as language, allows the diverse users of Miki to enjoy her services in 26 languages! With the help of the community of users, this has been made possible. The languages available are:
+
+- Arabic
+- Bulgarian
+- Czech
+- Danish
+- Dutch
+- English
+- Finnish
+- French
+- German
+- Hebrew
+- Hindi
+- Hungarian
+- Italian
+- Japanese
+- Lithuanian
+- Malaysian
+- Norwegian
+- Polish
+- Portuguese
+- Russian
+- Estonian
+- Swedish
+- Tagalog
+- Ukranian
+- Chinese Simplified
+- Chinese Traditional
 
 There’s two really important things to know about Miki’s language feature before you dive into it and explore the options it has to offer. Firstly, while anyone on the server can view the language options available, only those with permission to can actually change the language that Miki will operate in. Secondly, the languages are translated with a team of volunteers, and not all languages are completely done - this means you might come across some text that is still in the English language despite selecting a different one for Miki.
 
@@ -55,7 +56,7 @@ With that out of the way, it’s not expected for you to be able to always remem
 
 Any of those languages are selectable by Miki and she will operate in that language for you as much as possible. Once the decision has been made for which language she will work in, there’s a simple command to implement the change. The command is `setlocale` and simply typing the name of the language you wish to select for the channel you are using. This means you can have a Miki using different languages in different channels.The command is like so:
 
->setlocale &lt;language>
+> setlocale &lt;language>
 
 and implement the command looks like this:
 
