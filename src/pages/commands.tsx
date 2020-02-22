@@ -195,7 +195,7 @@ function CommandDetailscolumn(props: { value: any }) {
                     <Else>
                       <If test={paramValue.required}>
                         <a
-                          className="tooltip seperated-h tag is-primary"
+                          className="tooltip is-tooltip-multiline seperated-h tag is-primary"
                           data-tooltip={paramValue.description}
                         >
                           {" "}
@@ -204,7 +204,7 @@ function CommandDetailscolumn(props: { value: any }) {
                       </If>
                       <If test={!paramValue.required}>
                         <a
-                          className="tooltip seperated-h tag is-info"
+                          className="tooltip is-tooltip-multiline seperated-h tag is-info"
                           data-tooltip={paramValue.description}
                         >
                           {paramValue.name}
