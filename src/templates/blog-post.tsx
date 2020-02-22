@@ -90,7 +90,7 @@ export class BlogPost extends React.Component<Props> {
                 <Container>
                     <h2 className="title"><i className="fad fa-comment-dots"></i> Still not sure about a feature?</h2>
                     <p className="subtitle"> Join the Miki server and 
-                        let our experiences Miki volunteers and developers assist you!</p>
+                        let our experienced Miki volunteers and developers assist you!</p>
                     <Button className="seperated"
                         href="/invite?ref=miki_ai" 
                         size={Size.LARGE} 
