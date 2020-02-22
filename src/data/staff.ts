@@ -11,7 +11,7 @@ export default [
   },
   {
     name: "Meagan",
-    desc: "Server Mod",
+    desc: "Server Admin",
     uid: "189158295704043521"
   },
   {
