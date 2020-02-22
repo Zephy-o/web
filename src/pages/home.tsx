@@ -4,9 +4,15 @@ import { RouteComponentProps } from "@reach/router";
 import NewsReel from "../components/newsreel";
 import { FooterComponent } from "../components/footer";
 import { Head } from "../components/head";
-import { Button, Size, Color, Container } from "@veld/components";
+import {
+  Button,
+  Size,
+  Color,
+  Container,
+  DiscordMessage,
+  DiscordMessageFrame
+} from "@veld/components";
 import Navbar from "../components/navbar";
-import DiscordMessage from "react-discord-message";
 
 export default class Home extends React.Component<RouteComponentProps> {
   render() {
@@ -81,7 +87,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               </div>
             </div>
             <div className="column content">
-              <span className="discordwindow">
+              <DiscordMessageFrame>
                 <DiscordMessage
                   username="Guy"
                   time="Right now"
@@ -101,12 +107,12 @@ export default class Home extends React.Component<RouteComponentProps> {
                   body='Guy has obtained the "Millionaire" achievement!'
                   avatar="/miki_avatar.png"
                 />
-              </span>
+              </DiscordMessageFrame>
             </div>
           </div>
           <div className="columns section">
             <div className="column content">
-              <span className="discordwindow">
+              <DiscordMessageFrame>
                 <DiscordMessage
                   username="John"
                   time="Right now"
@@ -120,7 +126,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                   body="Gotcha! He's gone now. I've put your reason in the audit log."
                   avatar="/miki_avatar.png"
                 />
-              </span>
+              </DiscordMessageFrame>
             </div>
             <div className="column content">
               <div className="columns">
@@ -162,7 +168,7 @@ export default class Home extends React.Component<RouteComponentProps> {
               </div>
             </div>
             <div className="column">
-              <span className="discordwindow">
+              <DiscordMessageFrame>
                 <DiscordMessage
                   username="Miki"
                   isBot={true}
@@ -179,12 +185,12 @@ export default class Home extends React.Component<RouteComponentProps> {
                   body="Oh cool!"
                   avatar="/user_1.png"
                 />
-              </span>
+              </DiscordMessageFrame>
             </div>
           </div>
           <div className="columns section">
             <div className="column content">
-              <span className="discordwindow">
+              <DiscordMessageFrame>
                 <DiscordMessage
                   username="Guy"
                   isBot={false}
@@ -206,7 +212,7 @@ export default class Home extends React.Component<RouteComponentProps> {
                   body={"Guy has rolled 8 (2 + 6)"}
                   avatar="/miki_avatar.png"
                 />
-              </span>
+              </DiscordMessageFrame>
             </div>
             <div className="column">
               <div className="columns content">

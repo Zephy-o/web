@@ -103,15 +103,4 @@ class NavbarItem extends React.Component<Partial<NavbarItemProps>> {
       );
     }
   }
-
-  renderIcon() {
-    if (this.props.icon != null) {
-      return (
-        <span className="icon">
-          <i className="fa" />
-        </span>
-      );
-    }
-    return <React.Fragment />;
-  }
 }
