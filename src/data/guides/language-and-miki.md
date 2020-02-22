@@ -53,7 +53,7 @@ With that out of the way, it’s not expected for you to be able to always remem
 
 ![](https://cdn-w.miki.ai/web/landing/guides/localization/language-1.png)
 
-Any of those languages are selectable by Miki and she will operate in that language for you as much as possible. Once the decision has been made for which language she will work in, there’s a simple command to implement the change. The command is `setlocale` and simply typing the name of the language you wish to select for the channel you are using. This means you can have a Miki using different languages in different channels.The command is like so:
+Any of those languages are selectable by Miki and she will operate in that language for you as much as possible. Once the decision has been made for which language she will work in, there’s a simple command to implement the change. The command is `setlocale` and simply typing the name of the language you wish to select for the channel you are using. This means you can have a Miki using different languages in different channels. The command is like so:
 
 >setlocale &lt;language>
 
