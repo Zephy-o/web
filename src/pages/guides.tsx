@@ -61,7 +61,7 @@ export class Guides extends React.Component<Props> {
                         <Container>
                             <h1 className="title">Help & Guides</h1>
                             <p className="subtitle">
-                            At Miki; we believe accessibility comes first! For this reason we've compiled some of the
+                            At Miki, we believe accessibility comes first! For this reason we've compiled some of the
                             bot's most complicated features in form of simple step by step guides for you to follow!
                             </p>
                         </Container>
