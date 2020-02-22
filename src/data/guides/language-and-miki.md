@@ -52,7 +52,7 @@ There’s two really important things to know about Miki’s language feature be
 
 With that out of the way, it’s not expected for you to be able to always remember the languages that Miki can serve you in. After all, there could be new languages added over time that you might not even know about! A language is referred to as [locale] for Miki and anyone can see the listing of the locales available. Simply utilize the [listlocale] command and Miki will display the languages available, as shown below.
 
-![](https://cdn-w.miki.ai/web/landing/guides/localization/language-1.png)
+![](https://cdn-w.miki.ai/landing/guides/localization/language-1.png)
 
 Any of those languages are selectable by Miki and she will operate in that language for you as much as possible. Once the decision has been made for which language she will work in, there’s a simple command to implement the change. The command is `setlocale` and simply typing the name of the language you wish to select for the channel you are using. This means you can have a Miki using different languages in different channels. The command is like so:
 
@@ -60,7 +60,7 @@ Any of those languages are selectable by Miki and she will operate in that langu
 
 and implement the command looks like this:
 
-![](https://cdn-w.miki.ai/web/landing/guides/localization/language-2.png)
+![](https://cdn-w.miki.ai/landing/guides/localization/language-2.png)
 
 Just like so, and now Miki will operate in Hungarian to the fullest capacity possible. As an example, let’s try to marry someone.
 
