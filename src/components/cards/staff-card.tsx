@@ -24,7 +24,7 @@ export class StaffCard extends React.Component<Props> {
           <figure className="image is-64x64" style={{ margin: "auto" }}>
             <img
               className="is-rounded"
-              alt={name + "'s avatar"}
+              alt={(this.props.name || "nobody") + "'s avatar"}
               src={
                 this.props.userId
                   ? `https://miki-cdn.nyc3.digitaloceanspaces.com/avatars/${this.props.userId}.png`
