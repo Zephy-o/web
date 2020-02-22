@@ -1,6 +1,6 @@
 ---
 title: "Using MiScript to create custom commands"
-thumbnailUrl: "https://miki-web-cdn.nyc3.digitaloceanspaces.com/landing/guides/custom-commands/Thumbnail.png"
+thumbnailUrl: "https://cdn-w.miki.ai/landing/guides/custom-commands/Thumbnail.png"
 tags: [
     "tutorial", "scripting", "custom", "commands", "discord"
 ]
@@ -65,8 +65,8 @@ So now that you know how to create a script, Lets take a look at how to add it i
 >createcommand "testcommand" say "$[author]! Long time no see!"
 ```
 And if everything goes well, you will see this:<br><br>
-![image](https://miki-web-cdn.nyc3.digitaloceanspaces.com/landing/guides/custom-commands/testcommand.png)
+![image](https://cdn-w.miki.ai/landing/guides/custom-commands/testcommand.png)
 
 ## Removing commands
 To remove a command you have created, you can use ```>removecommand [command name]```. For example, if you wanted to remove the command we created above you would use ```>removecommand testcommand```. If done correctly, you should see the following:<br><br>
-![image](https://miki-web-cdn.nyc3.digitaloceanspaces.com/landing/guides/custom-commands/RemoveCommand.PNG)
+![image](https://cdn-w.miki.ai/landing/guides/custom-commands/RemoveCommand.PNG)
