@@ -16,7 +16,7 @@ authors: [
 		avatar: "https://cdn.miki.ai/avatars/121919449996460033.png"
 	}
 ]
-date: "2020-01-01"
+date: "1970-01-01"
 ---
 Miki is such a diverse bot and with diversity comes different languages. Localization, changing something to be more like your local area such as language,  allows the diverse users of Miki to enjoy her services in 26 languages! With the help of the community of users, this has been made possible. The languages available are: 
 
