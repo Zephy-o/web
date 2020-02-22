@@ -1,3 +1,23 @@
+---
+title: "Using MiScript to create custom commands"
+thumbnailUrl: "https://miki-web-cdn.nyc3.digitaloceanspaces.com/landing/guides/custom-commands/Thumbnail.png"
+tags: [
+    "tutorial", "scripting", "custom", "commands", "discord"
+]
+authors: [
+    {
+     name: "Zephy",
+    title: "Writer",
+    avatar: "https://cdn.miki.ai/avatars/355969214806360076.png"
+    },
+    {
+    name: "Veld",
+    title: "Editor",
+    avatar: "https://cdn.miki.ai/avatars/121919449996460033.png"
+    }
+]
+date: "2020-02-22"
+---
 Mi(ki)Script is Miki's custom command language, specifically written to make it easy to use custom commands. In this guide we will show you how to get started with MiScript.
 
 ## Commands
