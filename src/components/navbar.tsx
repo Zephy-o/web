@@ -1,119 +1,117 @@
 import * as React from "react";
 import { Link } from "@reach/router";
-import { Container } from "@veld/components";
+import { Color, Button, Container } from "@veld/components";
+import { Logo } from "./logo";
+import { NavbarBurger } from "./navbar-burger";
 
-export interface NavbarProps {
-    className: string;
+interface Props {
+  isLocked?: boolean;
 }
 
-export interface NavbarState {
-    active: boolean;
+interface State {
+  toggled: boolean;
 }
 
-export default class Navbar<Props extends NavbarProps, State extends NavbarState> extends React.Component<Props, State> {
-    public static defaultProps = {
-        className: "",
+export default class Navbar extends React.Component<Props, State> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggled: false
     };
+    this.toggle = this.toggle.bind(this);
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = ({
-            active: false
-        } as State);
-        this.toggle = this.toggle.bind(this);
-        this.getNavbarClass = this.getNavbarClass.bind(this);
+  getActive(base) {
+    if (this.state.toggled) {
+      return `${base} is-active`;
     }
-    
-    getNavbarClass() {
-        return `navbar is-fixed-top has-shadow ${this.props.className}`;
-    }
+    return base;
+  }
 
-    toggle() {
-        this.setState({
-            active: !this.state.active
-        })
-    }
-    
-    getActive(base) {
-        if(this.state.active)
-        {
-            return `${base} is-active`; 
-        }
-        return base;
-    }
-
-    render() {
-        return <React.Fragment>
-            <div style={{
-                marginBottom: "50px"
-            }}></div>
-                {this.renderNavbar()}
-        </React.Fragment>
-    }
-
-    renderNavbar() {
-        return (
-            <div className={`navbar ${this.getNavbarClass()}`} id="global-nav-bar">
-                <Container>
-                    <div className="navbar-brand">
-                        <a className="navbar-item" href="/">
-                            <h1>MIKI</h1>
-                        </a>
-                        <button className={"burger-button" + " " + this.getActive("navbar-burger has-text-centered")} 
-                                data-target="global-nav-menu" 
-                                aria-label="menu" 
-                                aria-expanded="false" 
-                                onClick={this.toggle}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                    <div className={this.getActive("navbar-menu")}>
-                        <div className="navbar-end">
-                            <NavbarItem href="/commands" value="Commands" />
-                            <NavbarItem href="/about" value="About" />
-                            <NavbarItem href="/donate" value="Donate" />
-                            <NavbarItem href="/guides" value="Guides" />
-                            <NavbarItem href="https://blog.miki.ai/" value="Blog" />
-                        </div>
-                    </div>
-                </Container>
+  render() {
+    return (
+      <React.Fragment>
+        {this.props.isLocked ? (
+          <div
+            style={{
+              marginTop: "40px"
+            }}
+          />
+        ) : null}
+        <div
+          className={"navbar" + (this.props.isLocked ? " is-fixed-top" : "")}
+        >
+          <Container>
+            <NavbarBurger toggled={this.state.toggled} onClick={this.toggle} />
+            <div className="navbar-brand is-hidden-touch">
+              <a className="navbar-item" href="/">
+                <Logo MainColor="#1d1c21" AccentColor="#2ea7e6" Size="2rem" />
+              </a>
             </div>
-        )
-    }
+            <div className={this.getActive("navbar-menu")}>
+              <div className="navbar-end rounded-bottom has-background-white">
+                <NavbarItem href="/commands">
+                  <b>Commands</b>
+                </NavbarItem>
+                <NavbarItem href="/about">
+                  <b>About</b>
+                </NavbarItem>
+                <NavbarItem href="/donate">
+                  <b>Donate</b>
+                </NavbarItem>
+                <NavbarItem href="/guides">
+                  <b>Guides</b>
+                </NavbarItem>
+                <NavbarItem href="https://blog.miki.ai/">
+                  <b>Blog</b>
+                </NavbarItem>
+                <NavbarItem href="/invite?ref=mikiai">
+                  <Button value="Invite" color={Color.PRIMARY} />
+                </NavbarItem>
+              </div>
+            </div>
+          </Container>
+        </div>
+      </React.Fragment>
+    );
+  }
+
+  toggle() {
+    this.setState({
+      toggled: !this.state.toggled
+    });
+  }
 }
 
 interface NavbarItemProps {
-    href: string;
-    value: string;
-    icon: string;
+  href: string;
 }
 
 class NavbarItem extends React.Component<Partial<NavbarItemProps>> {
-    render() {
-        if(this.props.href.startsWith("http"))
-        {
-            return <a href={this.props.href} className="navbar-item" >
-                {this.renderIcon()}
-                <p>{this.props.value}</p>
-            </a>
-        } else {
-            return <Link to={this.props.href} className="navbar-item" >
-                {this.renderIcon()}
-                <p>{this.props.value}</p>
-            </Link>
-        }
+  render() {
+    if (this.props.href.startsWith("http")) {
+      return (
+        <a href={this.props.href} className="navbar-item">
+          {this.props.children}
+        </a>
+      );
+    } else {
+      return (
+        <Link to={this.props.href} className={"navbar-item"}>
+          {this.props.children}
+        </Link>
+      );
     }
+  }
 
-    renderIcon() {
-        if(this.props.icon != null) {
-            return (
-                <span className="icon">
-                    <i className="fa"/>
-                </span>
-            )
-        }
-        return <React.Fragment/>;
+  renderIcon() {
+    if (this.props.icon != null) {
+      return (
+        <span className="icon">
+          <i className="fa" />
+        </span>
+      );
     }
+    return <React.Fragment />;
+  }
 }

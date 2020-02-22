@@ -15,7 +15,7 @@ export default class Donate extends React.Component<RouteComponentProps> {
       <div>
         <Head/>
         <NavbarComponent />
-        <div className="section hero is-medium is-textured">
+        <div className="section hero is-medium is-primary">
           <div className="container content">
             <h1 className="has-text-light">Feeling generous?</h1>
             <p className="has-text-light">
