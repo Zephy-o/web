@@ -1,6 +1,9 @@
 ---
 title: "A Guide to Using Miki in Your Language"
 thumbnailUrl: "https://cdn.miki.ai/web/landing/guides/miki-in-your-language.png"
+tags: [
+    "tutorial", "language", "customization", "commands", "discord"
+]
 authors: [
 	{
 		name: "Advocatus",
