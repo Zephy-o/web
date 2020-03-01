@@ -43,7 +43,7 @@ Another way to gain mekos is to vote for Miki on [Discord.gg](https://top.gg/bot
 - The base amount of mekos gained from voting is 100, this increases by 100 mekos for each consecutive day of voting up to a maximum of 10,000 mekos per vote after obtaining a 100 day streak. Failing to vote for 24 hours will end the streak.
 - Donators will receive double the amount from voting, this means they will begin by gaining 200 mekos, which will increase by 200 for each consecutive vote up to a maximum of 20,000 per vote.
 
-## **How Can I Gamble With my mekos?**
+## **How can I gamble with my mekos?**
 There are a variety of different games you can play to gamble with your mekos, the following are the gambling commands currently available:
 
 | Commands | Description | Max Bet | Payout |
@@ -76,3 +76,5 @@ There are a variety of different games you can play to gamble with your mekos, t
 
 #### Giving to others
 - You can give mekos to other users using `>give [@user] [amount]`
+
+We hope this guide has been helpful! If you have any further questions regarding any of Miki's features you can visit the [Miki Support server](https://discord.gg/39Xpj7K), where our support staff would be glad to assist you!
