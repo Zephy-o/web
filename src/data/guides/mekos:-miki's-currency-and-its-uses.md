@@ -27,7 +27,7 @@ When using Miki you will frequently come across the word 'mekos' being used, mek
 ## How can mekos be gained?
 Mekos can be consistently gained through the following commands:
 
- #### >Daily
+#### >Daily
  - Daily can be used every 24 hours to gain mekos. The base amount of mekos gained through daily is 100, however this will increase by 20 for every consecutive day that you claim your daily.
  - If 48 hours pass since your last daily claim, your streak will end and your daily will reset back to 100 mekos.
  - Donators receive double the amount from daily, meaning they will begin by gaining 200 mekos which will increase by 40 mekos for each consecutive day claimed.
