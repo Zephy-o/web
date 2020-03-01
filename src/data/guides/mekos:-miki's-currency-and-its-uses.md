@@ -24,7 +24,7 @@ When using Miki you will frequently come across the word 'mekos' being used, mek
 - Gambling with mekos
 - How mekos can be spent
 
-## **How can mekos be gained?**
+## How can mekos be gained?
 Mekos can be consistently gained through the following commands:
 
  #### >Daily
@@ -43,7 +43,7 @@ Another way to gain mekos is to vote for Miki on [Top.gg](https://top.gg/bot/mik
 - The base amount of mekos gained from voting is 100, this increases by 100 mekos for each consecutive day of voting up to a maximum of 10,000 mekos per vote after obtaining a 100 day streak. Failing to vote for 24 hours will end the streak.
 - Donators will receive double the amount from voting, this means they will begin by gaining 200 mekos, which will increase by 200 for each consecutive vote up to a maximum of 20,000 per vote.
 
-## **How can I gamble with my mekos?**
+## How can I gamble with my mekos?
 There are a variety of different games you can play to gamble with your mekos, the following are the gambling commands currently available:
 
 | Commands | Description | Max Bet | Payout |
