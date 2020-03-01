@@ -28,12 +28,12 @@ When using Miki you will frequently come across the word 'Mekos' being used, Mek
 ## **How can Mekos be gained?**
 Mekos can be consistently gained through the following commands:
 
- #### `>Daily`
+ #### >Daily
  - Daily can be used every 24 hours to gain Mekos. The base amount of mekos gained through daily is 100, however this will increase by 20 for every consecutive day that you claim your daily.
  - If 48 hours pass since your last daily claim, your streak will end and your daily will reset back to 100 Mekos.
  - Donators recieve double the amount from daily, meaning they will begin by gaining 200 Mekos which will increase by 40 Mekos for each consecutive day claimed.
  - The maximum amount you can gain from a daily streak is 2100 Mekos per day (4200 for Donators), this is achieved after accumulating a streak of 100 days.
- #### `>Weekly` 
+ #### >Weekly 
 - Weekly can be used once per week per server, this command will only work if the server has an active rival. A rival can be gained using `>guildnewrival`, however this command is only available to people with the `Manage Server` permission.
 - The amount gained from weekly is dependant on the level of the server's guild and the tier of guild house the guild currently has. The current guild house level and weekly multiplier can be viewed using `>guildhouse`, this will also display the cost of upgrading the guild house to the next tier.
 - The guild house can be upgraded using `>guildupgrade house`, upgrading the guild house will increase the weekly multiplier, however only people with the `Manage Server` permission can upgrade this. To upgrade the guild house, the guild bank must contain enough Mekos, you can view the amount of Mekos in the guild bank using `>guildbank balance` and deposit Mekos into the guild bank using `>guildbank deposit <number>`.
