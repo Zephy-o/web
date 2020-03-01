@@ -18,7 +18,7 @@ authors: [
 ]
 date: "2020-03-01"
 ---
-When using Miki you will frequently come across the word 'mekos' being used, mekos are the currency used throughout Miki's economy and can be gained and spent in many different ways. In this guide we will be taking a look at:
+When using Miki you will frequently come across the word 'mekos' being used. Mekos are the currency used throughout Miki's economy and can be gained and spent in many different ways. In this guide we will be taking a look at:
 
 - How mekos can be gained
 - Gambling with mekos
