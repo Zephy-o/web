@@ -1,5 +1,5 @@
 ---
-title: "Mekos: Miki's Currency and its uses"
+title: "Mekos: Miki's currency and its uses"
 thumbnailUrl: 
 tags: [
     "tutorial", "currency", "mekos", "discord"
