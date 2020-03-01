@@ -1,6 +1,6 @@
 ---
 title: "Mekos: Miki's currency and its uses"
-thumbnailUrl: 
+thumbnailUrl: "https://cdn.miki.ai/web/landing/guides/Mekos/MekosThumbnail.png"
 tags: [
     "tutorial", "currency", "mekos", "discord"
 ]
