@@ -38,7 +38,7 @@ Mekos can be consistently gained through the following commands:
 - The guild house can be upgraded using `>guildupgrade house`, upgrading the guild house will increase the weekly multiplier, however only people with the `Manage Server` permission can upgrade this. To upgrade the guild house the guild bank must contain enough mekos, you can view the amount of mekos in the guild bank using `>guildbank balance` and deposit mekos into the guild bank using `>guildbank deposit [number]`.
 
 #### Voting on top.gg
-Another way to gain mekos is to vote for Miki on [Discord.gg](https://top.gg/bot/miki)
+Another way to gain mekos is to vote for Miki on [Top.gg](https://top.gg/bot/miki)
 - You can vote for the bot every 12 hours. After voting you will receive a direct message from Miki stating the amount of mekos you have received for voting.
 - The base amount of mekos gained from voting is 100, this increases by 100 mekos for each consecutive day of voting up to a maximum of 10,000 mekos per vote after obtaining a 100 day streak. Failing to vote for 24 hours will end the streak.
 - Donators will receive double the amount from voting, this means they will begin by gaining 200 mekos, which will increase by 200 for each consecutive vote up to a maximum of 20,000 per vote.
