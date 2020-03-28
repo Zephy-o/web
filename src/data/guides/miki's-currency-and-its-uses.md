@@ -25,7 +25,7 @@ When using Miki you will frequently come across the word 'mekos' being used, mek
 - How mekos can be spent
 
 ## **How can mekos be gained?**
-Mekos can be consistently gained by using the `>daily` and `>weekly` as well as voting for Miki on 
+Mekos can be consistently gained by using the `>daily` and `>weekly` as well as voting for Miki on Top.gg, in this section we will go through each of these methods in more detail.
 
  #### >Daily
  - Daily can be used every 24 hours to gain mekos. The base amount of mekos gained through daily is 100, however this will increase by 20 for every consecutive day that you claim your daily.
