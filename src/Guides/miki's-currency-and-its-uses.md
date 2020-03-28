@@ -1,6 +1,6 @@
 ---
-title: "Mekos: Miki's currency and its uses"
-thumbnailUrl: "https://cdn.miki.ai/web/landing/guides/Mekos/MekosThumbnail.png"
+title: "Miki's currency and its uses"
+thumbnailUrl: "https://cdn-w.miki.ai/landing/guides/mekos/mekosthumbnail.png"
 tags: [
     "tutorial", "currency", "mekos", "discord"
 ]
@@ -25,7 +25,7 @@ When using Miki you will frequently come across the word 'mekos' being used, mek
 - How mekos can be spent
 
 ## **How can mekos be gained?**
-Mekos can be consistently gained through the following commands:
+Mekos can be consistently gained by using the `>daily` and `>weekly` as well as voting for Miki on 
 
  #### >Daily
  - Daily can be used every 24 hours to gain mekos. The base amount of mekos gained through daily is 100, however this will increase by 20 for every consecutive day that you claim your daily.
@@ -38,10 +38,11 @@ Mekos can be consistently gained through the following commands:
 - The guild house can be upgraded using `>guildupgrade house`, upgrading the guild house will increase the weekly multiplier, however only people with the `Manage Server` permission can upgrade this. To upgrade the guild house the guild bank must contain enough mekos, you can view the amount of mekos in the guild bank using `>guildbank balance` and deposit mekos into the guild bank using `>guildbank deposit [number]`.
 
 #### Voting on top.gg
-Another way to gain mekos is to vote for Miki on [Top.gg](https://top.gg/bot/miki)
+Another way to gain mekos is to vote for Miki on Top.gg
 - You can vote for the bot every 12 hours. After voting you will receive a direct message from Miki stating the amount of mekos you have received for voting.
 - The base amount of mekos gained from voting is 100, this increases by 100 mekos for each consecutive day of voting up to a maximum of 10,000 mekos per vote after obtaining a 100 day streak. Failing to vote for 24 hours will end the streak.
 - Donators will receive double the amount from voting, this means they will begin by gaining 200 mekos, which will increase by 200 for each consecutive vote up to a maximum of 20,000 per vote.
+- a link to the top.gg website can be found by using the `>donate` command.
 
 ## **How can I gamble with my mekos?**
 There are a variety of different games you can play to gamble with your mekos, the following are the gambling commands currently available:
@@ -68,7 +69,7 @@ There are a variety of different games you can play to gamble with your mekos, t
 
 #### Marriage slots
 - Marriage slots can be purchased with mekos. You will begin with 5 slots and can purchase 5 more for a maximum of 10 while Donators can purchase an extra 5 slots on top of this for a maximum of 15.
-- Purchasing your first slot will cost 2,500 mekos, however with each slot purchased the price will increase by 2,500.
+- Purchasing your first slot will cost 2,500 mekos, however with each slot purchased the price will increase linearly by 2,500 mekos per extra slot.
 
 #### Guild Bank
 - Mekos can be donated to a server's guild bank using `>guildbank deposit [number]` and the guild can use these mekos to upgrade their guild house to increase their `>weekly` multiplier.
@@ -77,4 +78,5 @@ There are a variety of different games you can play to gamble with your mekos, t
 #### Giving to others
 - You can give mekos to other users using `>give [@user] [amount]`
 
+Interested in becoming a donator and gaining all the great perks that come along with it? You can donate through Patreon by clicking [here](https://www.patreon.com/mikibot), or through Ko-fi [here](https://ko-fi.com/velddy).<br>
 We hope this guide has been helpful! If you have any further questions regarding any of Miki's features you can visit the [Miki Support server](https://discord.gg/39Xpj7K), where our support staff would be glad to assist you!
